@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../../public/img/logo.png">
+	<title>Contacto</title>
+	<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body class="grid-conteinerContacto">
+	<!-- Inicio del header -->
+	<header>
+		<nav class="navbar">
+			<picture class="navbar__logo">
+				<img class="navbar__logoImagen" src="../img/logo.png" alt="logoNav">
+			</picture>
+			<ul class="navbar__menu">
+				<li class="menu__item">
+					<a href="../../index.html" class="menu__link">INICIO</a>
+				</li>
+				<li class="menu__item">
+					<a href="sobremi.html" class="menu__link">SOBRE MI</a>
+				</li>
+				<li class="menu__item">
+					<a href="contacto.html" class="menu__link">CONTACTO</a>
+				</li>
+				<li class="menu__item">
+					<a href="estilos.html" class="menu__link">ESTILOS</a>
+				</li>
+				<li class="menu__item">
+					<a href="reservas.html" class="menu__link">RESERVAS</a>
+				</li>
+				<li class="menu__item">
+					<a href="servicios.html" class="menu__link">SERVICIOS</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Fin del header -->
+	<!--información de mi sitio -->
+	<section class="ContactoTituloLogo">
+		<h1 class="ContactoTituloLogo__titulo">CONTACTO</h1>
+		<picture class="ContactoTituloLogo__logoCentral">
+			<img class="ContactoTituloLogo__logoCentralImagen" src="../img/contacto.png" alt="contacto">
+		</picture>
+	</section>
+	<section class="contactoFormulario">
+		<form class="contactoFormulario__formulario" action="" method="post">
+			<label for="nombreyapellido:">Nombre y Apellido:</label>
+			<input type="text" name="nombreyapellido" id="nombreyapellido"><br>
+			<label for="email:">Email:</label>
+			<input type="email" name="email" id="email"><br>
+			<label for="celular:"> Numero de celular:</label>
+			<input type="number" name="celular" id="celular"><br>
+			<label for="motivo"> Motivo:</label>
+			<select name="motivo" id="motivo">
+				<option value="Queja">Queja</option>
+				<option value="Sugerencia">Sugerencia</option>
+				<option value="Consulta">Consulta</option>
+			</select>
+			<br>
+			<label for="comentario">Comentario:</label><br>
+			<textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+			<button type="submit"> Enviar Data</button>
+		</form>
+	</section>
+	<!-- fin de la informacion del sitio -->
+	<!-- inicio de footer -->
+	<footer>
+		<h3 class="copy">COPYRIGHT - TODOS LOS DERECHOS RESERVADOS</h3>
+		<h3 class="joako">JOAKO'S BARBER'S</h3>
+		<ul class="redes">
+			<li><img src="../img/redes.png" alt="redes"></li>
+			<li><a href="https://www.instagram.com/joacogomez16/" target="blank"><img
+						src="../../public/img/instagramlogo.png" alt="Instagram logo"></a></li>
+			<li><a href="https://www.twitter.com" target="blank"><img src="../../public/img/twitterlogo.png"
+						alt="Twitter logo"></a></li>
+			<li><a href="https://www.facebook.com/joaco.gomez.7564" target="_blank"><img
+						src="../../public/img/facebooklogo.png" alt="facebook logo"></a></li>
+		</ul>
+	</footer>
+	<!-- fin del footer -->
+</body>
+
+</html>

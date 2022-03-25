@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../public/img/logo.png">
+    <title>Reservas</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body class="grid-containerReservas">
+    <!-- Inicio del header -->
+    <header>
+        <nav class="navbar">
+            <picture class="navbar__logo">
+                <img class="navbar__logoImagen" src="../img/logo.png" alt="logoNav">
+            </picture>
+            <ul class="navbar__menu">
+                <li class="menu__item">
+                    <a href="../../index.html" class="menu__link">INICIO</a>
+                </li>
+                <li class="menu__item">
+                    <a href="sobremi.html" class="menu__link">SOBRE MI</a>
+                </li>
+                <li class="menu__item">
+                    <a href="contacto.html" class="menu__link">CONTACTO</a>
+                </li>
+                <li class="menu__item">
+                    <a href="estilos.html" class="menu__link">ESTILOS</a>
+                </li>
+                <li class="menu__item">
+                    <a href="reservas.html" class="menu__link">RESERVAS</a>
+                </li>
+                <li class="menu__item">
+                    <a href="servicios.html" class="menu__link">SERVICIOS</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fin del header -->
+    <!--  información de mi sitio -->
+    <section class="reservasTituloLogo">
+        <h1 class="reservasTituloLogo__titulo">RESERVAS</h1>
+        <picture class="reservasTituloLogo__logo">
+            <img class="reservasTituloLogo__logoImagen" src="../img/reservas.png" alt="reservas">
+        </picture>
+    </section>
+    <section class="reservasFormulario">
+        <form class="reservasFormulario__formulario" action="" method="post">
+            <label for="nombreyapellido:">Nombre y Apellido:</label>
+            <input type="text" name="nombreyapellido" id="nombreyapellido"><br>
+            <label for="email:">Email:</label>
+            <input type="email" name="email" id="email"><br>
+            <label for="celular:"> Numero de celular:</label>
+            <input type="number" name="celular" id="celular"><br>
+            <label for="Corte de pelo"> Servicios:</label>
+            <input type="radio" name="Seleccionunica" id="Corte de pelo" value="Corte de pelo"> Corte de Pelo
+            <input type="radio" name="Seleccionunica" id="Corte de pelo + Barba" value="Corte de pelo + Barba">
+            Corte de Pelo + Barba
+            <input type="radio" name="Seleccionunica" id="Corte de pelo + Barba + Cejas"> Corte de Pelo + Barba+
+            Cejas <br>
+            <label for="fechayhora"> Fecha y hora de tu reserva:</label>
+            <input type="datetime-local" name="fechayhora" id="">
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section class="reservasUbiPar">
+        <picture class="reservasUbiPar__logoUbicacion">
+            <a href="https://www.google.com.ar/maps/@-31.4195168,-64.1870144,3a,90y,71.98h,77.19t/data=!3m6!1e1!3m4!1sjRUm36zCmeG1Bm9AcUyULw!2e0!7i13312!8i6656"
+                target="blank">
+                <img class="reservasUbiPar__logoUbicacionImg" src="../img/ubicacion.png" alt="ubicacion"></a>
+        </picture>
+
+        <p class="reservasUbiPar__ubicacionText">Nos encontramos en Barrio Nueva Córdoba, Calle Obispo Trejo 327 .
+            Córdoba, Argentina.
+        </p>
+
+    </section>
+    <!-- Fin de la informacion de mi sitio -->
+    <!-- inicio de footer -->
+    <footer>
+        <h3 class="copy">COPYRIGHT - TODOS LOS DERECHOS RESERVADOS</h3>
+        <h3 class="joako">JOAKO'S BARBER'S</h3>
+        <ul class="redes">
+            <li><img src="../img/redes.png" alt="redes"></li>
+            <li><a href="https://www.instagram.com/joacogomez16/" target="blank"><img
+                        src="../../public/img/instagramlogo.png" alt="Instagram logo"></a></li>
+            <li><a href="https://www.twitter.com" target="blank"><img src="../../public/img/twitterlogo.png"
+                        alt="Twitter logo"></a></li>
+            <li><a href="https://www.facebook.com/joaco.gomez.7564" target="_blank"><img
+                        src="../../public/img/facebooklogo.png" alt="facebook logo"></a></li>
+        </ul>
+    </footer>
+    <!-- Fin del footer -->
+
+</body>
+
+</html>

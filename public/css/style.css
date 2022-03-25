@@ -1,0 +1,1130 @@
+/*imports*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Normalize*/
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+
+html {
+    font-family: 'Bebas Neue', cursive;
+    background-image: url(../img/fondito.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-size: 62.5%;
+}
+
+/*globals*/
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #aa0000;
+    font-size: 30px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*grid contenedor seccion INICIO*/
+.grid-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px .1fr 1fr 100px
+}
+
+.grid-container header {
+    grid-column: 1/5;
+    grid-row: 1/1;
+}
+
+.grid-container .sectionUno {
+    grid-column: 1/5;
+    grid-row: 2/2;
+    margin-top: 20px;
+}
+
+.grid-container .sectionDos {
+    grid-column: 2/4;
+    grid-row: 3/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container footer {
+    grid-row: 4/4;
+    grid-column: 1/5;
+}
+
+
+/*header*/
+.navbar {
+    background-color: gold;
+    border: solid black 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.navbar__menu {
+    display: flex;
+    gap: 20px;
+}
+
+/*comienzo de css en distintas cajas INICIO*/
+
+.sectionUno__titulo {
+    font-size: 30px;
+    background-color: white;
+    border: solid black 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sectionUno__logoCentral {
+    display: flex;
+    justify-content: center;
+}
+
+.sectionDos__lista {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 100px;
+}
+
+/*mismo footer para todas las secciones*/
+footer {
+    background-color: gold;
+    border: solid black 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+footer h3 {
+    font-size: 30px;
+    color: #aa0000;
+}
+
+footer .redes {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+/*Seccion sobreMi*/
+/*grid contenedor*/
+.grid-containerSobreMi {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px .1fr 1fr 100px;
+    grid-gap: 20px;
+}
+
+.grid-containerSobreMi header {
+    grid-column: 1/4;
+    grid-row: 1/1;
+}
+
+.grid-containerSobreMi .SobreMiTituloLogo {
+    grid-column: 1/4;
+    grid-row: 2/2;
+    margin-top: 20px;
+}
+
+.grid-containerSobreMi .SobreMiTituloLogo__contenedorLogo {
+    grid-column: 1/4;
+    grid-row: 3/3;
+}
+
+.grid-containerSobreMi .SobreMiJoacoImgParrafo {
+    grid-column: 1/4;
+    grid-row: 3/3;
+}
+
+.grid-containerSobreMi footer {
+    grid-column: 1/4;
+    grid-row: 4/4;
+}
+
+/*seccion sobre mi css*/
+.SobreMiTituloLogo__titulo {
+    background-color: white;
+    border: black solid 5px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SobreMiTituloLogo__contenedorLogo {
+    display: flex;
+    justify-content: center;
+}
+
+.SobreMiJoacoImgParrafo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.SobreMiJoacoImgParrafo__quienSoy {
+    background-color: white;
+    border: black solid 5px;
+    height: 448px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.SobreMiJoacoImgParrafo__quienSoy h2 {
+    font-size: 50px;
+}
+
+.SobreMiJoacoImgParrafo__quienSoy p {
+    font-size: 30px;
+    padding: 50px 50px 50px 50px;
+}
+
+
+
+/*Seccion estilos*/
+/*grid contenedor*/
+
+.grid-conteinerEstilos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px .1fr 100px auto 100px;
+    min-height: 100vh;
+}
+
+.grid-conteinerEstilos header {
+    grid-column: 1/7;
+    grid-row: 1/1;
+}
+
+.grid-conteinerEstilos .EstiloTitulo {
+    grid-column: 1/7;
+    grid-row: 2/2;
+}
+
+.grid-conteinerEstilos .estilosSeccionImg {
+    grid-column: 1/7;
+    grid-row: 3/3;
+}
+
+.grid-conteinerEstilos .tituloMejoresEstilos {
+    grid-column: 1/7;
+    grid-row: 4/4;
+}
+
+.grid-conteinerEstilos .videoMejores {
+    grid-column: 1/7;
+    grid-row: 5/5;
+}
+
+.grid-conteinerEstilos footer {
+    grid-column: 1/7;
+    grid-row: 6/6;
+}
+
+/*seccion estilos css*/
+
+.EstiloTitulo__titulo {
+    background-color: white;
+    border: black solid 5px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.estilosSeccionImg {
+    display: grid;
+    display: grid;
+    grid-template-columns: (5, 1fr);
+    grid-template-rows: (1fr);
+}
+
+.estilosSeccionImg .estilosSeccionImg__tiposDeEstilos {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.estilosSeccionImg .estilosSeccionImg__tiposDeEstilosLogo {
+    grid-column: 1/1;
+    display: flex;
+
+}
+
+.estilosSeccionImg__estiloImagenes {
+    height: auto;
+}
+
+.estilosSeccionImg .estilosSeccionImg__cortesEstilos {
+    grid-column: 2/5;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tituloMejoresEstilos .tituloMejoresEstilos__text {
+    background-color: #aa0000;
+    border: black 5px solid;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.videoMejores {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/*Seccion reservas*/
+/*grid contenedor*/
+
+.grid-containerReservas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px .1fr 1fr .1fr 100px;
+    grid-gap: 20px;
+}
+
+.grid-containerReservas header {
+    grid-column: 1/4;
+    grid-row: 1/1;
+}
+
+.grid-containerReservas .reservasTituloLogo {
+    grid-column: 1/4;
+    grid-row: 2/2;
+}
+
+.grid-containerReservas .reservasFormulario {
+    grid-column: 2/3;
+    grid-row: 3/3;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-containerReservas .reservasUbiPar {
+    grid-column: 1/4;
+    grid-row: 4/4;
+}
+
+.grid-containerReservas footer {
+    grid-column: 1/4;
+    grid-row: 5/5;
+}
+
+
+/*seccion reservas css*/
+
+.reservasTituloLogo .reservasTituloLogo__titulo {
+    background-color: white;
+    border: black solid 5px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.reservasTituloLogo__logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.reservasUbiPar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservasFormulario__formulario {
+    background: white;
+    border: solid black 5px;
+    font-size: 30px;
+    width: 814px;
+}
+
+.reservasUbiPar__logoUbicacion {
+    display: flex;
+    justify-content: center;
+}
+
+.reservasUbiPar p {
+    background-color: white;
+    border: black solid 5px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/*Seccion contacto*/
+/*grid contenedor*/
+
+.grid-conteinerContacto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px .1fr auto 100px;
+    grid-gap: 20px;
+}
+
+.grid-conteinerContacto header {
+    grid-column: 1/4;
+    grid-row: 1/1;
+}
+
+.grid-conteinerContacto .ContactoTituloLogo {
+    grid-column: 1/4;
+    grid-row: 2/2;
+}
+
+.grid-conteinerContacto .contactoFormulario {
+    grid-column: 2/3;
+    grid-row: 3/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-conteinerContacto footer {
+    grid-column: 1/4;
+    grid-row: 4/4;
+}
+
+/*seccion contacto css*/
+
+.ContactoTituloLogo .ContactoTituloLogo__titulo {
+    background-color: white;
+    border: black solid 5px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ContactoTituloLogo .ContactoTituloLogo__logoCentral {
+    display: flex;
+    justify-content: center;
+}
+
+.contactoFormulario .contactoFormulario__formulario {
+    background: white;
+    border: solid black 5px;
+    font-size: 30px;
+    width: 814px;
+}
+
+/*Seccion servicios*/
+/*grid contenedor*/
+
+.grid-conteinerServicios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px .1fr 1fr 100px;
+    grid-gap: 20px;
+}
+
+.grid-conteinerServicios header {
+    grid-column: 1/5;
+    grid-row: 1/1;
+}
+
+.grid-conteinerServicios .ServiciosTituloLogo {
+    grid-column: 1/5;
+    grid-row: 2/2;
+}
+
+.grid-conteinerServicios .ServiciosTabla {
+    grid-column: 1/5;
+    grid-row: 3/3;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-conteinerServicios footer {
+    grid-column: 1/5;
+    grid-row: 4/4;
+}
+
+/*seccion servicios css*/
+.ServiciosTituloLogo .ServiciosTituloLogo__titulo {
+    background-color: white;
+    border: black solid 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.ServiciosTituloLogo .ServiciosTituloLogo__logo {
+    display: flex;
+    justify-content: center;
+}
+
+.ServiciosTabla .ServiciosTabla__tabla {}
+
+.ServiciosTabla__tabla,
+th,
+td {
+    border: 5px solid;
+    background-color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+
+
+
+
+
+/*MEDIA QUERIS 1200px 1*/
+
+@media screen and (max-width: 1200px) {
+
+    header .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /*inicio media 1200px*/
+
+    .sectionUno h1 {
+        font-size: 30px;
+    }
+
+    .sectionUno .sectionUno__logoCentral {
+        height: 300px;
+    }
+
+    .sectionDos .sectionDos__lista {
+        gap: 20px;
+    }
+
+    footer {
+        padding: 2em 0;
+    }
+
+    /*estilos media 1200px*/
+    .estilosSeccionImg .estilosSeccionImg__tiposDeEstilosLogo {
+        height: 160px;
+    }
+
+    .estilosSeccionImg .estilosSeccionImg__estiloImagenes {
+        height: 160px;
+    }
+
+    /*sobre mi media 1200px*/
+    .SobreMiJoacoImgParrafo__joacoImagen {
+        height: 350px;
+    }
+
+    .SobreMiJoacoImgParrafo__quienSoy {
+        height: 350px;
+    }
+
+    .SobreMiJoacoImgParrafo__quienSoy h2 {
+        font-size: 40px;
+    }
+
+    .SobreMiJoacoImgParrafo__quienSoy p {
+        font-size: 20px;
+        padding: 40px 40px 40px 40px;
+    }
+
+    /*reservas media 1200px*/
+
+    /*contacto media 1200px*/
+
+}
+
+/*MEDIA QUERIS 1024px 2*/
+
+@media screen and (max-width: 1024px) {
+
+    header .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /*inicio media 1024px*/
+    .sectionUno .sectionUno__titulo {
+        font-size: 30px;
+    }
+
+    .sectionUno .sectionUno__logoCentral {
+        height: 300px;
+    }
+
+    .sectionDos .sectionDos__lista {
+        gap: 20px;
+    }
+
+    footer {
+        padding: 2em 0;
+    }
+
+    /*estilos media 1024px*/
+    .estilosSeccionImg .estilosSeccionImg__tiposDeEstilosLogo {
+        height: 140px;
+    }
+
+    .estilosSeccionImg .estilosSeccionImg__estiloImagenes {
+        height: 140px;
+    }
+
+    /*sobre mi media 1024px*/
+    .SobreMiJoacoImgParrafo__joacoImagen {
+        height: 350px;
+    }
+
+    .SobreMiJoacoImgParrafo__quienSoy {
+        height: 345px;
+        width: 458px;
+    }
+
+    .SobreMiJoacoImgParrafo__quienSoy h2 {
+        font-size: 35px;
+    }
+
+    .SobreMiJoacoImgParrafo__quienSoy p {
+        font-size: 20px;
+        padding: 35px 35px 35px 35px;
+    }
+
+    /*reservas media 1024px*/
+    .reservasFormulario__formulario {
+        font-size: 25px;
+        width: 618px;
+    }
+
+    .reservasUbiPar p {
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        width: 445px;
+    }
+
+    /*contacto media 1024px*/
+    .contactoFormulario .contactoFormulario__formulario {
+        font-size: 28px;
+        width: 542px;
+    }
+
+
+}
+
+/*MEDIA QUERIS 768px*/
+
+@media screen and (max-width: 768px) {
+
+    header .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /*inicio media 768px*/
+
+    .grid-container {
+        grid-template-rows: 100px .1fr 1fr 100px;
+    }
+
+    .sectionUno .sectionUno__titulo {
+        font-size: 30px;
+    }
+
+    .sectionUno .sectionUno__logoCentral {
+        height: 300px;
+    }
+
+    .sectionDos .sectionDos__lista {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer h3 {
+        font-size: 25px;
+        color: #aa0000;
+    }
+
+    /*estilos media 768px*/
+
+    .estilosSeccionImg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .estilosSeccionImg .estilosSeccionImg__cortesEstilos {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .videoMejores {
+        display: none;
+    }
+
+    /*sobre mi media 768px*/
+
+    .menu__link {
+        font-size: 20px;
+    }
+
+    .joacoImgParrafo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .SobreMiJoacoImgParrafo__joacoImagen {
+        height: 250px;
+    }
+
+    .SobreMiJoacoImgParrafo__quienSoy {
+        height: 276px;
+        width: 399px;
+    }
+
+    .SobreMiJoacoImgParrafo__quienSoy h2 {
+        font-size: 40px;
+    }
+
+    .SobreMiJoacoImgParrafo__quienSoy p {
+        font-size: 20px;
+        padding: 40px 40px 40px 40px;
+    }
+
+    /*reservas media 768px*/
+    .reservasFormulario__formulario {
+        font-size: 23px;
+        width: 445px;
+    }
+
+    .reservasUbiPar p {
+        font-size: 23px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*contacto media 768px*/
+    .contactoFormulario .contactoFormulario__formulario {
+        font-size: 28px;
+        width: 390px;
+    }
+
+
+
+}
+
+
+
+
+/*MEDIA QUERIS  600px */
+
+@media screen and (max-width: 600px) {
+
+    header .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .menu__link {
+        font-size: 24px;
+    }
+
+    /*inicio media 600px*/
+
+    .sectionUno .sectionUno__titulo {
+        font-size: 30px;
+    }
+
+    .sectionUno .sectionUno__logoCentral {
+        height: 300px;
+    }
+
+    .sectionDos .sectionDos__lista {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sectionDos .seccionDos__seccionesImg {
+        height: 150px;
+    }
+
+
+    footer ul li img {
+        height: 35px;
+    }
+
+    /*media estilos 600px*/
+    .estilosSeccionImg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .estilosSeccionImg .estilosSeccionImg__cortesEstilos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .videoMejores {
+        display: none;
+    }
+
+    /*media sobre mi 600px*/
+    .menu__link {
+        font-size: 15px;
+    }
+
+    .SobreMiJoacoImgParrafo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .SobreMiJoacoImgParrafo__joacoImagen {
+        height: 250px;
+    }
+
+    .SobreMiJoacoImgParrafo__quienSoy {
+        height: 276px;
+        width: 399px;
+    }
+
+    .SobreMiJoacoImgParrafo__quienSoy h2 {
+        font-size: 40px;
+    }
+
+    .SobreMiJoacoImgParrafo__quienSoy p {
+        font-size: 20px;
+        padding: 40px 40px 40px 40px;
+    }
+
+    /*media reservas 600px*/
+    .reservasFormulario__formulario {
+        font-size: 23px;
+        width: 333px;
+    }
+
+    .reservasUbiPar p {
+        font-size: 23px;
+        display: flex;
+        justify-content: center;
+        width: 305px;
+
+    }
+
+    /*contacto media 600px*/
+    .contactoFormulario .contactoFormulario__formulario {
+        font-size: 28px;
+        width: 390px;
+    }
+
+    /*servicios media 600px*/
+    .ServiciosTabla__tabla,
+    th,
+    td {
+        font-size: 20px;
+    }
+
+
+}
+
+/*MEDIA QUERIS 480px*/
+
+@media screen and (max-width: 480px) {
+
+    header .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar__logoImagen {
+        height: 50px;
+    }
+
+    .menu__link {
+        font-size: 12px;
+    }
+
+    /*media inicio 480px*/
+
+    .sectionUno .sectionUno__titulo {
+        font-size: 30px;
+    }
+
+    .sectionUno .sectionUno__logoCentral {
+        height: 250px;
+    }
+
+    .sectionDos .sectionDos__lista {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sectionDos .seccionDos__seccionesImg {
+        height: 150px;
+    }
+
+    footer h3 {
+        font-size: 23px;
+    }
+
+    footer ul li img {
+        height: 30px;
+    }
+
+    .copy {
+        font-size: 15px
+    }
+
+    .joako {
+        font-size: 15px;
+    }
+
+    /*media estilos 480px*/
+
+    .estilosSeccionImg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .estilosSeccionImg .estilosSeccionImg__cortesEstilos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .videoMejores {
+        display: none;
+
+    }
+
+    /*media sobre mi 480px*/
+
+    .SobreMiJoacoImgParrafo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .SobreMiJoacoImgParrafo__joacoImagen {
+        height: 179px;
+    }
+
+    .SobreMiJoacoImgParrafo__quienSoy {
+        height: 344px;
+        width: 313px;
+    }
+
+    .SobreMiJoacoImgParrafo__quienSoy h2 {
+        font-size: 40px;
+    }
+
+    .SobreMiJoacoImgParrafo__quienSoy p {
+        font-size: 20px;
+        padding: 40px 40px 40px 40px;
+    }
+
+    /*media reservas 480px*/
+    .reservasFormulario__formulario {
+        font-size: 20px;
+        width: 302px;
+    }
+
+    .reservasUbiPar p {
+        font-size: 23px;
+        display: flex;
+        justify-content: center;
+        width: 192px;
+    }
+
+    /*contacto media 480px*/
+    .contactoFormulario .contactoFormulario__formulario {
+        font-size: 28px;
+        width: 256px;
+    }
+
+    /*servicios media 480*/
+    .ServiciosTabla__tabla,
+    th,
+    td {
+        font-size: 19px;
+    }
+
+}
+
+/*MEDIA QUERIS 320px*/
+
+@media screen and (max-width: 320px) {
+
+    header .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar__logoImagen {
+        height: 50px;
+    }
+
+    .menu__link {
+        font-size: 12px;
+    }
+
+    /* media inicio 320px*/
+
+    .sectionUno .sectionUno__titulo {
+        font-size: 30px;
+    }
+
+    .sectionUno .sectionUno__logoCentral {
+        height: 200px;
+    }
+
+    .sectionDos .sectionDos__lista {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sectionDos .seccionDos__seccionesImg {
+        height: 100px;
+    }
+
+    footer h3 {
+        font-size: 21px;
+    }
+
+    footer ul li img {
+        height: 25px;
+    }
+
+    .copy {
+        font-size: 10px
+    }
+
+    .joako {
+        font-size: 10px;
+    }
+
+    /* media estilos 320px*/
+    .estilosSeccionImg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .estilosSeccionImg .estilosSeccionImg__cortesEstilos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .videoMejores {
+        display: none;
+
+    }
+
+    /* media sobre mi 320px*/
+
+    .SobreMiJoacoImgParrafo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .SobreMiTituloLogo__logoImagen {
+        height: 160px;
+    }
+
+    .SobreMiJoacoImgParrafo__joacoImagen {
+        height: 179px;
+    }
+
+    .SobreMiJoacoImgParrafo__quienSoy {
+        height: 426px;
+        width: 241px;
+    }
+
+    .SobreMiJoacoImgParrafo__quienSoy h2 {
+        font-size: 35px;
+    }
+
+    .SobreMiJoacoImgParrafo__quienSoy p {
+        font-size: 20px;
+        padding: 40px 40px 40px 40px;
+    }
+
+    /*media reservas 320px*/
+    .reservasFormulario__formulario {
+        font-size: 18px;
+        width: 258px;
+    }
+
+    .reservasUbiPar p {
+        font-size: 23px;
+        display: flex;
+        justify-content: center;
+        width: 192px;
+    }
+
+    /*contacto media 320px*/
+    .contactoFormulario .contactoFormulario__formulario {
+        font-size: 28px;
+        width: 256px;
+    }
+
+    /*servicios media 320px*/
+    .ServiciosTabla__tabla,
+    th,
+    td {
+        font-size: 17px;
+    }
+}
