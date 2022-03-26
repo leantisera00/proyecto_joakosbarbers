@@ -31,8 +31,14 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: 'Bebas Neue', cursive;
+    background: linear-gradient(135deg, rgba(255,0,0,1) 0%,rgba(255,0,4,1) 10%,rgba(255,255,255,1) 11%,rgba(255,255,255,1) 20%,rgba(38,0,255,1) 21%,rgba(38,0,255,1) 30%,rgba(255,255,255,1) 31%,rgba(255,255,255,1) 40%,rgba(255,0,0,1) 41%,rgba(255,0,0,1) 50%,rgba(255,255,255,1) 51%,rgba(255,255,255,1) 60%,rgba(0,8,255,1) 61%,rgba(0,8,255,1) 70%,rgba(255,255,255,1) 71%,rgba(255,255,255,1) 80%,rgba(255,0,0,1) 81%,rgba(255,0,0,1) 90%,rgba(255,255,255,1) 91%,rgba(255,255,255,1) 100%);
+    font-size: 62.5%;
+    line-height:normal
 }
 
+
+}
 /*grid contenedor seccion INICIO*/
 .grid-container {
     min-height: 100vh;
@@ -82,8 +88,26 @@ body {
     gap: 20px;
 }
 
+.navbar__logoImagen {
+    width: 64px;
+}
+.navbar-light .navbar-nav .nav-link {color: #aa0000;}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {color: #aa0000;}
 /*comienzo de css en distintas cajas INICIO*/
 
+.inicioMain 
+{min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+a {transition: 0.2s;}
+a:hover {
+    background-color: #f1f100d3;
+    box-shadow: 0 0 10px #f1f100d3, 0 0 40px #f1f100d3, 0 0 80px #f1f100d3;
+    border-radius: 50px;
+}
 .sectionUno__titulo {
     font-size: 30px;
     background-color: white;
@@ -102,7 +126,18 @@ body {
     justify-content: space-around;
     margin-top: 20px;
     gap: 100px;
+    
 }
+
+.sectionDos {display: flex;
+    justify-content: center;}
+
+.sectionDos__lista {
+    display: flex;
+    justify-content: center;
+}
+
+
 
 /*mismo footer para todas las secciones*/
 footer {
@@ -166,6 +201,12 @@ footer .redes {
 }
 
 /*seccion sobre mi css*/
+.sobreMiMain { min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .SobreMiTituloLogo__titulo {
     background-color: white;
     border: black solid 5px;
@@ -185,27 +226,38 @@ footer .redes {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    flex-wrap: nowrap;
 }
 
 .SobreMiJoacoImgParrafo__quienSoy {
     background-color: white;
     border: black solid 5px;
-    height: 448px;
+    height: 327px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 
 }
 
+.SobreMiJoacoImgParrafoImg {display: flex;
+    align-content: center;
+    justify-content: center;}
+
 .SobreMiJoacoImgParrafo__quienSoy h2 {
     font-size: 50px;
+    
 }
 
 .SobreMiJoacoImgParrafo__quienSoy p {
     font-size: 30px;
     padding: 50px 50px 50px 50px;
 }
+
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;}
 
 
 
@@ -250,6 +302,19 @@ footer .redes {
 }
 
 /*seccion estilos css*/
+
+.h5, h5 {
+    font-size: 50px;
+    color: firebrick;
+    /* border: black; */
+    background: white;
+    border: black solid 5px;
+}
+
+.Estilos__carrouselParrafo {
+    font-size: 20px;
+    background-color: black;
+}
 
 .EstiloTitulo__titulo {
     background-color: white;
@@ -346,6 +411,12 @@ footer .redes {
 
 
 /*seccion reservas css*/
+.mainReservas {min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
 .reservasTituloLogo .reservasTituloLogo__titulo {
     background-color: white;
@@ -424,6 +495,14 @@ footer .redes {
 
 /*seccion contacto css*/
 
+.mainContacto {    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
 .ContactoTituloLogo .ContactoTituloLogo__titulo {
     background-color: white;
     border: black solid 5px;
@@ -444,6 +523,11 @@ footer .redes {
     border: solid black 5px;
     font-size: 30px;
     width: 814px;
+}
+
+textarea {
+    height: 100px;
+    width: 225px;
 }
 
 /*Seccion servicios*/
@@ -482,6 +566,15 @@ footer .redes {
 }
 
 /*seccion servicios css*/
+
+.mainServicios {min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .ServiciosTituloLogo .ServiciosTituloLogo__titulo {
     background-color: white;
     border: black solid 5px;
@@ -719,7 +812,7 @@ td {
     }
 
     .SobreMiJoacoImgParrafo__quienSoy {
-        height: 276px;
+        height: 314px;
         width: 399px;
     }
 

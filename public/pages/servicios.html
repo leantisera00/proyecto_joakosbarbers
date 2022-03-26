@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../public/img/logo.png">
     <title>Servicios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link
     rel="stylesheet"
@@ -15,64 +16,74 @@
 
 </head>
 
-<body class="grid-conteinerServicios">
+<body">
     <!-- Inicio del header -->
     <header>
-        <nav class="navbar">
-            <picture class="navbar__logo">
-                <img class="navbar__logoImagen" src="../img/logo.png" alt="logoNav">
-            </picture>
-            <ul class="navbar__menu">
-                <li class="menu__item">
-                    <a href="../../index.html" class="menu__link">INICIO</a>
-                </li>
-                <li class="menu__item">
-                    <a href="sobremi.html" class="menu__link">SOBRE MI</a>
-                </li>
-                <li class="menu__item">
-                    <a href="contacto.html" class="menu__link">CONTACTO</a>
-                </li>
-                <li class="menu__item">
-                    <a href="estilos.html" class="menu__link">ESTILOS</a>
-                </li>
-                <li class="menu__item">
-                    <a href="reservas.html" class="menu__link">RESERVAS</a>
-                </li>
-                <li class="menu__item">
-                    <a href="servicios.html" class="menu__link">SERVICIOS</a>
-                </li>
-            </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../index.html"> <img src="../img/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobremi.html">SOBRE MI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./estilos.html">ESTILOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./reservas.html">RESERVAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">SERVICIOS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- Fin del header -->
     <!--  información de mi sitio -->
-    <section class="ServiciosTituloLogo">
+    <main class="container mainServicios">
+    <section class="ServiciosTituloLogo row">
+        <article class="col-xxl-12">
         <h1 class="ServiciosTituloLogo__titulo animate__animated animate__slideInDown">SERVICIOS</h1>
-        <picture class="ServiciosTituloLogo__logo animate__animated animate__flipInX">
+    </article>
+        <picture class="ServiciosTituloLogo__logo animate__animated animate__flipInX col-xxl-12">
             <img src="../img/servicios.png" alt="servicios">
         </picture>
     </section>
 
-    <section class="ServiciosTabla animate__animated animate__backInLeft">
-        <table class="ServiciosTabla__tabla">
-            <tr>
-                <th class="ServiciosTabla__contenido">Servicios</th>
-                <th class="ServiciosTabla__contenido">Precios</th>
+    <section class="ServiciosTabla animate__animated animate__backInLeft row">
+        <table class="ServiciosTabla__tabla table-warning col-xxl-12">
+            <tr class="table-warning">
+                <th class="ServiciosTabla__contenido table-warning">Servicios</th>
+                <th class="ServiciosTabla__contenido table-warning">Precios</th>
             </tr>
-            <tr>
-                <td class="ServiciosTabla__contenido"> Corte de Pelo</td>
-                <td class="ServiciosTabla__contenido">$300</td>
+            <tr class="table-warning">
+                <td class="ServiciosTabla__contenido table-warning"> Corte de Pelo</td>
+                <td class="ServiciosTabla__contenido table-warning">$300</td>
             </tr>
-            <tr>
-                <td class="ServiciosTabla__contenido">Corte de pelo + Barba</td>
-                <td class="ServiciosTabla__contenido">$400</td>
+            <tr class="table-warning">
+                <td class="ServiciosTabla__contenido table-warning">Corte de pelo + Barba</td>
+                <td class="ServiciosTabla__contenido table-warning">$400</td>
             </tr>
-            <tr>
-                <td class="ServiciosTabla__contenido">Corte de pelo + Barba + Perfilado de cejas</td>
-                <td class="ServiciosTabla__contenido">$500</td>
+            <tr class="table-warning">
+                <td class="ServiciosTabla__contenido table-warning">Corte de pelo + Barba + Perfilado de cejas</td>
+                <td class="ServiciosTabla__contenido table-warning">$500</td>
             </tr>
         </table>
     </section>
+</main>
     <!-- Fin de la informacion de mi sito -->
     <!-- inicio de footer -->
     <footer>
@@ -89,6 +100,8 @@
         </ul>
     </footer>
     <!-- Fin del footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

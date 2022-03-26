@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../public/img/logo.png">
     <title>Reservas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link
     rel="stylesheet"
@@ -15,44 +16,53 @@
 
 </head>
 
-<body class="grid-containerReservas">
+<body>
     <!-- Inicio del header -->
     <header>
-        <nav class="navbar">
-            <picture class="navbar__logo">
-                <img class="navbar__logoImagen" src="../img/logo.png" alt="logoNav">
-            </picture>
-            <ul class="navbar__menu">
-                <li class="menu__item">
-                    <a href="../../index.html" class="menu__link">INICIO</a>
-                </li>
-                <li class="menu__item">
-                    <a href="sobremi.html" class="menu__link">SOBRE MI</a>
-                </li>
-                <li class="menu__item">
-                    <a href="contacto.html" class="menu__link">CONTACTO</a>
-                </li>
-                <li class="menu__item">
-                    <a href="estilos.html" class="menu__link">ESTILOS</a>
-                </li>
-                <li class="menu__item">
-                    <a href="reservas.html" class="menu__link">RESERVAS</a>
-                </li>
-                <li class="menu__item">
-                    <a href="servicios.html" class="menu__link">SERVICIOS</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../index.html"> <img src="../img/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobremi.html">SOBRE MI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./estilos.html">ESTILOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./reservas.html">RESERVAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">SERVICIOS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- Fin del header -->
     <!--  información de mi sitio -->
-    <section class="reservasTituloLogo">
+    <main class="mainReservas container">
+    <section class="reservasTituloLogo row">
+        <article class="">
         <h1 class="reservasTituloLogo__titulo animate__animated animate__slideInDown">RESERVAS</h1>
+    </article>
         <picture class="reservasTituloLogo__logo animate__animated animate__flipInX">
             <img class="reservasTituloLogo__logoImagen" src="../img/reservas.png" alt="reservas">
         </picture>
     </section>
-    <section class="reservasFormulario">
+    <section class="reservasFormulario row">
         <form class="reservasFormulario__formulario animate__animated animate__backInLeft" action="" method="post">
             <label for="nombreyapellido:">Nombre y Apellido:</label>
             <input type="text" name="nombreyapellido" id="nombreyapellido"><br>
@@ -69,22 +79,24 @@
             <label for="fechayhora"> Fecha y hora de tu reserva:</label>
             <input type="datetime-local" name="fechayhora" id="">
 
-            <button type="submit">Enviar</button>
+            <button class="btn btn-danger " type="submit">Enviar</button>
         </form>
     </section>
 
-    <section class="reservasUbiPar">
+    <section class="reservasUbiPar row">
         <picture class="reservasUbiPar__logoUbicacion animate__animated animate__flipInX">
             <a href="https://www.google.com.ar/maps/@-31.4195168,-64.1870144,3a,90y,71.98h,77.19t/data=!3m6!1e1!3m4!1sjRUm36zCmeG1Bm9AcUyULw!2e0!7i13312!8i6656"
                 target="blank">
                 <img class="reservasUbiPar__logoUbicacionImg" src="../img/ubicacion.png" alt="ubicacion"></a>
         </picture>
+        <article>
 
         <p class="reservasUbiPar__ubicacionText animate__animated animate__backInLeft">Nos encontramos en Barrio Nueva Córdoba, Calle Obispo Trejo 327 .
             Córdoba, Argentina.
         </p>
-
+    </article>
     </section>
+</main>
     <!-- Fin de la informacion de mi sitio -->
     <!-- inicio de footer -->
     <footer>
@@ -101,6 +113,8 @@
         </ul>
     </footer>
     <!-- Fin del footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 
 </body>
 
