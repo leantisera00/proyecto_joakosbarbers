@@ -12,7 +12,7 @@
 
 html {
     font-family: 'Bebas Neue', cursive;
-    background: linear-gradient(135deg, rgba(255,0,0,1) 0%,rgba(255,0,4,1) 10%,rgba(255,255,255,1) 11%,rgba(255,255,255,1) 20%,rgba(38,0,255,1) 21%,rgba(38,0,255,1) 30%,rgba(255,255,255,1) 31%,rgba(255,255,255,1) 40%,rgba(255,0,0,1) 41%,rgba(255,0,0,1) 50%,rgba(255,255,255,1) 51%,rgba(255,255,255,1) 60%,rgba(0,8,255,1) 61%,rgba(0,8,255,1) 70%,rgba(255,255,255,1) 71%,rgba(255,255,255,1) 80%,rgba(255,0,0,1) 81%,rgba(255,0,0,1) 90%,rgba(255,255,255,1) 91%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(135deg, rgba(255, 0, 0, 1) 0%, rgba(255, 0, 4, 1) 10%, rgba(255, 255, 255, 1) 11%, rgba(255, 255, 255, 1) 20%, rgba(38, 0, 255, 1) 21%, rgba(38, 0, 255, 1) 30%, rgba(255, 255, 255, 1) 31%, rgba(255, 255, 255, 1) 40%, rgba(255, 0, 0, 1) 41%, rgba(255, 0, 0, 1) 50%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 1) 60%, rgba(0, 8, 255, 1) 61%, rgba(0, 8, 255, 1) 70%, rgba(255, 255, 255, 1) 71%, rgba(255, 255, 255, 1) 80%, rgba(255, 0, 0, 1) 81%, rgba(255, 0, 0, 1) 90%, rgba(255, 255, 255, 1) 91%, rgba(255, 255, 255, 1) 100%);
     font-size: 62.5%;
 }
 
@@ -32,13 +32,14 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: 'Bebas Neue', cursive;
-    background: linear-gradient(135deg, rgba(255,0,0,1) 0%,rgba(255,0,4,1) 10%,rgba(255,255,255,1) 11%,rgba(255,255,255,1) 20%,rgba(38,0,255,1) 21%,rgba(38,0,255,1) 30%,rgba(255,255,255,1) 31%,rgba(255,255,255,1) 40%,rgba(255,0,0,1) 41%,rgba(255,0,0,1) 50%,rgba(255,255,255,1) 51%,rgba(255,255,255,1) 60%,rgba(0,8,255,1) 61%,rgba(0,8,255,1) 70%,rgba(255,255,255,1) 71%,rgba(255,255,255,1) 80%,rgba(255,0,0,1) 81%,rgba(255,0,0,1) 90%,rgba(255,255,255,1) 91%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(135deg, rgba(255, 0, 0, 1) 0%, rgba(255, 0, 4, 1) 10%, rgba(255, 255, 255, 1) 11%, rgba(255, 255, 255, 1) 20%, rgba(38, 0, 255, 1) 21%, rgba(38, 0, 255, 1) 30%, rgba(255, 255, 255, 1) 31%, rgba(255, 255, 255, 1) 40%, rgba(255, 0, 0, 1) 41%, rgba(255, 0, 0, 1) 50%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 1) 60%, rgba(0, 8, 255, 1) 61%, rgba(0, 8, 255, 1) 70%, rgba(255, 255, 255, 1) 71%, rgba(255, 255, 255, 1) 80%, rgba(255, 0, 0, 1) 81%, rgba(255, 0, 0, 1) 90%, rgba(255, 255, 255, 1) 91%, rgba(255, 255, 255, 1) 100%);
     font-size: 62.5%;
-    line-height:normal
+    line-height: normal
 }
 
 
 }
+
 /*grid contenedor seccion INICIO*/
 .grid-container {
     min-height: 100vh;
@@ -74,7 +75,7 @@ body {
 
 /*header*/
 .navbar {
-    background: linear-gradient(to top, #926229,#FAF3A0, #926229 );
+    background: linear-gradient(to top, #926229, #FAF3A0, #926229);
     border: solid black 5px;
     display: flex;
     align-items: center;
@@ -91,23 +92,35 @@ body {
 .navbar__logoImagen {
     width: 64px;
 }
-.navbar-light .navbar-nav .nav-link {color: #aa0000;}
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {color: #aa0000;}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #aa0000;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #aa0000;
+}
+
 /*comienzo de css en distintas cajas INICIO*/
 
-.inicioMain 
-{min-height: 100vh;
+.inicioMain {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-a {transition: 0.2s;}
+a {
+    transition: 0.2s;
+}
+
 a:hover {
     background-color: #f1f100d3;
     box-shadow: 0 0 10px #f1f100d3, 0 0 40px #f1f100d3, 0 0 80px #f1f100d3;
     border-radius: 50px;
 }
+
 .sectionUno__titulo {
     font-size: 30px;
     background-color: white;
@@ -126,11 +139,13 @@ a:hover {
     justify-content: space-around;
     margin-top: 20px;
     gap: 100px;
-    
+
 }
 
-.sectionDos {display: flex;
-    justify-content: center;}
+.sectionDos {
+    display: flex;
+    justify-content: center;
+}
 
 .sectionDos__lista {
     display: flex;
@@ -141,7 +156,7 @@ a:hover {
 
 /*mismo footer para todas las secciones*/
 footer {
-    background: linear-gradient(to top, #926229,#FAF3A0, #926229 );
+    background: linear-gradient(to top, #926229, #FAF3A0, #926229);
     border: solid black 5px;
     display: flex;
     justify-content: space-evenly;
@@ -162,7 +177,7 @@ footer .redes {
 
 .sectionUno .sectionUno__logoCentral img {
     animation: twister 4s infinite alternate linear;
-}  
+}
 
 
 /*Seccion sobreMi*/
@@ -201,7 +216,8 @@ footer .redes {
 }
 
 /*seccion sobre mi css*/
-.sobreMiMain { min-height: 100vh;
+.sobreMiMain {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -237,17 +253,19 @@ footer .redes {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 
 }
 
-.SobreMiJoacoImgParrafoImg {display: flex;
+.SobreMiJoacoImgParrafoImg {
+    display: flex;
     align-content: center;
-    justify-content: center;}
+    justify-content: center;
+}
 
 .SobreMiJoacoImgParrafo__quienSoy h2 {
     font-size: 50px;
-    
+
 }
 
 .SobreMiJoacoImgParrafo__quienSoy p {
@@ -257,7 +275,8 @@ footer .redes {
 
 .row {
     --bs-gutter-x: 0;
-    --bs-gutter-y: 0;}
+    --bs-gutter-y: 0;
+}
 
 
 
@@ -303,7 +322,8 @@ footer .redes {
 
 /*seccion estilos css*/
 
-.h5, h5 {
+.h5,
+h5 {
     font-size: 50px;
     color: firebrick;
     /* border: black; */
@@ -411,7 +431,8 @@ footer .redes {
 
 
 /*seccion reservas css*/
-.mainReservas {min-height: 100vh; 
+.mainReservas {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -495,7 +516,8 @@ footer .redes {
 
 /*seccion contacto css*/
 
-.mainContacto {    min-height: 100vh;
+.mainContacto {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -567,7 +589,8 @@ textarea {
 
 /*seccion servicios css*/
 
-.mainServicios {min-height: 100vh;
+.mainServicios {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -1223,7 +1246,11 @@ td {
 }
 
 @keyframes twister {
-    from { transform: rotate(0deg);
+    from {
+        transform: rotate(0deg);
     }
-    to { transform: rotate(360deg);}
+
+    to {
+        transform: rotate(360deg);
+    }
 }
