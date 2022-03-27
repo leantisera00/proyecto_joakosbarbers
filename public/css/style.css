@@ -37,6 +37,11 @@ body {
     line-height: normal
 }
 
+h1 {color: black;
+font-size: 30px;
+background-color: white;
+border: black solid 5px;}
+
 
 /*header*/
 .navbar {
@@ -148,39 +153,6 @@ footer .redes {
 
 
 /*Seccion sobreMi*/
-/*grid contenedor*/
-.grid-containerSobreMi {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px .1fr 1fr 100px;
-    grid-gap: 20px;
-}
-
-.grid-containerSobreMi header {
-    grid-column: 1/4;
-    grid-row: 1/1;
-}
-
-.grid-containerSobreMi .SobreMiTituloLogo {
-    grid-column: 1/4;
-    grid-row: 2/2;
-    margin-top: 20px;
-}
-
-.grid-containerSobreMi .SobreMiTituloLogo__contenedorLogo {
-    grid-column: 1/4;
-    grid-row: 3/3;
-}
-
-.grid-containerSobreMi .SobreMiJoacoImgParrafo {
-    grid-column: 1/4;
-    grid-row: 3/3;
-}
-
-.grid-containerSobreMi footer {
-    grid-column: 1/4;
-    grid-row: 4/4;
-}
 
 /*seccion sobre mi css*/
 .sobreMiMain {
@@ -193,7 +165,7 @@ footer .redes {
 .SobreMiTituloLogo__titulo {
     background-color: white;
     border: black solid 5px;
-    font-size: 20px;
+    font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -204,13 +176,11 @@ footer .redes {
     justify-content: center;
 }
 
-.SobreMiJoacoImgParrafo {
-    display: flex;
-    align-items: center;
+.SobreMiJoacoImgParrafo {display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: nowrap;
+    
 }
+
 
 .SobreMiJoacoImgParrafo__quienSoy {
     background-color: white;

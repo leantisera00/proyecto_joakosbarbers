@@ -14,11 +14,10 @@
 
 </head>
 
-<body>
+<body class="container-fluid">
     <!-- Inicio del header -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
                 <a class="navbar-brand" href="../../index.html"> <img src="../img/logo.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,26 +45,27 @@
                         </li>
                     </ul>
                 </div>
-            </div>
         </nav>
     </header>
     <!-- Fin del header -->
     <!--  información de mi sitio -->
-    <main class="container sobreMiMain">
+    <main class="sobreMiMain">
         <section class="SobreMiTituloLogo row">
-            <article class="SobreMiTituloLogo__titulo animate__animated animate__slideInDown col-xxl-12">
-                <h1>SOBRE MI</h1>
-            </article>
-            <article class="SobreMiTituloLogo__contenedorLogo col-xxl-12">
+            <article class="col-12">
+                <h1 class="SobreMiTituloLogo__titulo animate__animated animate__slideInDown"> SOBRE MI</h1>
+            <picture class="SobreMiTituloLogo__contenedorLogo">
                 <img class="SobreMiTituloLogo__logoImagen animate__animated animate__flipInX img-fluid"
-                    src="../img/sobremi.png" alt="sobre mi"><br>
-            </article>
+                    src="../img/sobremi.png" alt="sobre mi">
+            </picture>
+        </article>
         </section>
-        <section class="SobreMiJoacoImgParrafo animate__animated animate__backInLeft row">
-            <article class="SobreMiJoacoImgParrafoImg col-xxl-4 col-xl-4 col-lg-4 col-md-5 col-sm-6">
+        <section class="row SobreMiJoacoImgParrafo animate__animated animate__backInLeft">
+            <article class="col-sm-4 Sobremi__imgPar">
+            <picture class="SobreMiJoacoImgParrafoImg">
                 <img class="SobreMiJoacoImgParrafo__joacoImagen img-fluid" src="../img/joakos.png" alt="Joaquin">
-            </article>
-            <article class="SobreMiJoacoImgParrafo__quienSoy col-xxl-8 col-xl-8  col-lg-8 col-md-7 col-sm-6">
+            </picture>
+        </article>
+            <article class="SobreMiJoacoImgParrafo__quienSoy col-sm-8">
                 <h2>¿QUIEN SOY?</h2>
                 <p>Mi nombre es Joaquin Gomez, soy de Córdoba, Argentina y tengo 20 años.
                     <br> Soy un apasionado en el arte estetico. <br> Inicie en 2020 en forma de hobbie y con el correr
@@ -77,17 +77,18 @@
     </main>
     <!--  Fin de información de mi sitio -->
     <!-- Inicio del footer -->
-    <footer>
-        <h3 class="copy">COPYRIGHT - TODOS LOS DERECHOS RESERVADOS</h3>
-        <h3 class="joako">JOAKO'S BARBER'S</h3>
-        <ul class="redes">
-            <li><img src="../img/redes.png" alt="redes"></li>
-            <li><a href="https://www.instagram.com/joacogomez16/" target="blank"><img
-                        src="../../public/img/instagramlogo.png" alt="Instagram logo"></a></li>
-            <li><a href="https://www.twitter.com" target="blank"><img src="../../public/img/twitterlogo.png"
-                        alt="Twitter logo"></a></li>
+    <footer class="row">
+        <h3 class="copy col-md-4">COPYRIGHT - TODOS LOS DERECHOS RESERVADOS</h3>
+        <h3 class="joako col-md-4">JOAKO'S BARBER'S</h3>
+        <ul class="redes col-md-4">
+            <li><img class="redes__red img-fluid" src="../img/redes.png" alt="redes"></li>
+            <li><a href="https://www.instagram.com/joacogomez16/" target="blank"><img class="redes__instagram img-fluid"
+                        src="../img/instagramlogo.png" alt="Instagram logo"></a></li>
+            <li><a href="https://www.twitter.com" target="blank"><img class="redes__twitter img-fluid"
+                        src="../img/twitterlogo.png" alt="Twitter logo"></a></li>
             <li><a href="https://www.facebook.com/joaco.gomez.7564" target="_blank"><img
-                        src="../../public/img/facebooklogo.png" alt="facebook logo"></a></li>
+                        class="redes__facebook img-fluid" src="../img/facebooklogo.png" alt="facebook logo"></a>
+            </li>
         </ul>
     </footer>
     <!-- Fin del footer -->
