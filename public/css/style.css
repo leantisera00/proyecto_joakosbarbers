@@ -218,44 +218,7 @@ footer .redes {
 
 
 /*Seccion estilos*/
-/*grid contenedor*/
 
-.grid-conteinerEstilos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px .1fr 100px auto 100px;
-    min-height: 100vh;
-}
-
-.grid-conteinerEstilos header {
-    grid-column: 1/7;
-    grid-row: 1/1;
-}
-
-.grid-conteinerEstilos .EstiloTitulo {
-    grid-column: 1/7;
-    grid-row: 2/2;
-}
-
-.grid-conteinerEstilos .estilosSeccionImg {
-    grid-column: 1/7;
-    grid-row: 3/3;
-}
-
-.grid-conteinerEstilos .tituloMejoresEstilos {
-    grid-column: 1/7;
-    grid-row: 4/4;
-}
-
-.grid-conteinerEstilos .videoMejores {
-    grid-column: 1/7;
-    grid-row: 5/5;
-}
-
-.grid-conteinerEstilos footer {
-    grid-column: 1/7;
-    grid-row: 6/6;
-}
 
 /*seccion estilos css*/
 
@@ -282,31 +245,7 @@ h5 {
     margin-bottom: 20px;
 }
 
-.estilosSeccionImg {
-    display: grid;
-    display: grid;
-    grid-template-columns: (5, 1fr);
-    grid-template-rows: (1fr);
-}
-
-.estilosSeccionImg .estilosSeccionImg__tiposDeEstilos {
-    display: flex;
-    justify-content: center;
-    height: auto;
-}
-
-.estilosSeccionImg .estilosSeccionImg__tiposDeEstilosLogo {
-    grid-column: 1/1;
-    display: flex;
-
-}
-
-.estilosSeccionImg__estiloImagenes {
-    height: auto;
-}
-
-.estilosSeccionImg .estilosSeccionImg__cortesEstilos {
-    grid-column: 2/5;
+.estilos__secciontipos {
     display: flex;
     justify-content: space-evenly;
 }
@@ -320,6 +259,15 @@ h5 {
     margin-bottom: 20px;
     color: white;
 }
+
+.estilosSeccionImg__logo {    display: flex;
+    justify-content: center;
+}
+
+.estilosSeccionImg_peinados{     display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+gap: 20px;}
 
 .videoMejores {
     display: flex;
