@@ -13,52 +13,52 @@
 
 </head>
 
-<body>
+<body class="container-fluid">
 	<!-- Inicio del header -->
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="../../index.html"> <img src="../img/logo.png" alt="logo"></a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="../../index.html">INICIO</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="./sobremi.html">SOBRE MI</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="./contacto.html">CONTACTO</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="./estilos.html">ESTILOS</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="./reservas.html">RESERVAS</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="./servicios.html">SERVICIOS</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="../../index.html"> <img src="../img/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobremi.html">SOBRE MI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./estilos.html">ESTILOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./reservas.html">RESERVAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">SERVICIOS</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+    </header>
 	<!-- Fin del header -->
 	<!--información de mi sitio -->
-	<main class="container mainContacto">
-		<section class="ContactoTituloLogo">
+	<main class="mainContacto">
+		<section class="ContactoTituloLogo row">
+			<article class="col-12">
 			<h1 class="ContactoTituloLogo__titulo animate__animated animate__slideInDown">CONTACTO</h1>
 			<picture class="ContactoTituloLogo__logoCentral animate__animated animate__flipInX">
 				<img class="ContactoTituloLogo__logoCentralImagen" src="../img/contacto.png" alt="contacto">
 			</picture>
+		</article>
 		</section>
-		<section class="contactoFormulario animate__animated animate__backInLeft">
-			<form class="contactoFormulario__formulario" action="" method="post">
+		<section class="contactoFormulario animate__animated animate__backInLeft row">
+			<form class="col-12 contactoFormulario__formulario" action="" method="post">
 				<label for="nombreyapellido:">Nombre y Apellido:</label>
 				<input type="text" name="nombreyapellido" id="nombreyapellido"><br>
 				<label for="email:">Email:</label>
@@ -80,19 +80,20 @@
 	</main>
 	<!-- fin de la informacion del sitio -->
 	<!-- inicio de footer -->
-	<footer>
-		<h3 class="copy">COPYRIGHT - TODOS LOS DERECHOS RESERVADOS</h3>
-		<h3 class="joako">JOAKO'S BARBER'S</h3>
-		<ul class="redes">
-			<li><img src="../img/redes.png" alt="redes"></li>
-			<li><a href="https://www.instagram.com/joacogomez16/" target="blank"><img
-						src="../../public/img/instagramlogo.png" alt="Instagram logo"></a></li>
-			<li><a href="https://www.twitter.com" target="blank"><img src="../../public/img/twitterlogo.png"
-						alt="Twitter logo"></a></li>
-			<li><a href="https://www.facebook.com/joaco.gomez.7564" target="_blank"><img
-						src="../../public/img/facebooklogo.png" alt="facebook logo"></a></li>
-		</ul>
-	</footer>
+	<footer class="row">
+        <h3 class="copy col-md-4">COPYRIGHT - TODOS LOS DERECHOS RESERVADOS</h3>
+        <h3 class="joako col-md-4">JOAKO'S BARBER'S</h3>
+        <ul class="redes col-md-4">
+            <li><img class="redes__red img-fluid" src="../img/redes.png" alt="redes"></li>
+            <li><a href="https://www.instagram.com/joacogomez16/" target="blank"><img class="redes__instagram img-fluid"
+                        src="../img/instagramlogo.png" alt="Instagram logo"></a></li>
+            <li><a href="https://www.twitter.com" target="blank"><img class="redes__twitter img-fluid"
+                        src="../img/twitterlogo.png" alt="Twitter logo"></a></li>
+            <li><a href="https://www.facebook.com/joaco.gomez.7564" target="_blank"><img
+                        class="redes__facebook img-fluid" src="../img/facebooklogo.png" alt="facebook logo"></a>
+            </li>
+        </ul>
+    </footer>
 	<!-- fin del footer -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
