@@ -382,10 +382,6 @@ td {
 }
 
 
-
-
-
-
 /*MEDIA QUERIS 1200px 1*/
 
 @media screen and (max-width: 1200px) {
@@ -397,20 +393,12 @@ td {
 
     /*inicio media 1200px*/
 
-    .sectionUno h1 {
-        font-size: 30px;
-    }
-
     .sectionUno .sectionUno__logoCentral {
         height: 300px;
     }
 
     .sectionDos .sectionDos__lista {
         gap: 20px;
-    }
-
-    footer {
-        padding: 2em 0;
     }
 
     /*estilos media 1200px*/
@@ -440,9 +428,6 @@ td {
         padding: 40px 40px 40px 40px;
     }
 
-    /*reservas media 1200px*/
-
-    /*contacto media 1200px*/
 
 }
 
@@ -453,23 +438,6 @@ td {
     header .navbar {
         flex-wrap: wrap;
         justify-content: center;
-    }
-
-    /*inicio media 1024px*/
-    .sectionUno .sectionUno__titulo {
-        font-size: 30px;
-    }
-
-    .sectionUno .sectionUno__logoCentral {
-        height: 300px;
-    }
-
-    .sectionDos .sectionDos__lista {
-        gap: 20px;
-    }
-
-    footer {
-        padding: 2em 0;
     }
 
     /*estilos media 1024px*/
@@ -483,7 +451,7 @@ td {
 
     /*sobre mi media 1024px*/
     .SobreMiJoacoImgParrafo__joacoImagen {
-        height: 350px;
+        height: 301px;
     }
 
     .SobreMiJoacoImgParrafo__quienSoy {
@@ -491,14 +459,6 @@ td {
         width: 458px;
     }
 
-    .SobreMiJoacoImgParrafo__quienSoy h2 {
-        font-size: 35px;
-    }
-
-    .SobreMiJoacoImgParrafo__quienSoy p {
-        font-size: 20px;
-        padding: 35px 35px 35px 35px;
-    }
 
     /*reservas media 1024px*/
     .reservasFormulario__formulario {
@@ -512,42 +472,11 @@ td {
         width: 542px;
     }
 
-
 }
 
 /*MEDIA QUERIS 768px*/
 
 @media screen and (max-width: 768px) {
-
-    header .navbar {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    /*inicio media 768px*/
-
-    .grid-container {
-        grid-template-rows: 100px .1fr 1fr 100px;
-    }
-
-    .sectionUno .sectionUno__titulo {
-        font-size: 30px;
-    }
-
-    .sectionUno .sectionUno__logoCentral {
-        height: 300px;
-    }
-
-    .sectionDos .sectionDos__lista {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    footer h3 {
-        font-size: 25px;
-        color: #aa0000;
-    }
 
     /*estilos media 768px*/
 
@@ -558,28 +487,7 @@ td {
         align-items: center;
     }
 
-    .estilosSeccionImg .estilosSeccionImg__cortesEstilos {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .videoMejores {
-        display: none;
-    }
-
     /*sobre mi media 768px*/
-
-    .menu__link {
-        font-size: 20px;
-    }
-
-    .joacoImgParrafo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
     .SobreMiJoacoImgParrafo__joacoImagen {
         height: 250px;
@@ -590,118 +498,46 @@ td {
         width: 399px;
     }
 
-    .SobreMiJoacoImgParrafo__quienSoy h2 {
-        font-size: 40px;
-    }
-
-    .SobreMiJoacoImgParrafo__quienSoy p {
-        font-size: 20px;
-        padding: 40px 40px 40px 40px;
-    }
 
     /*reservas media 768px*/
     .reservasFormulario__formulario {
         font-size: 23px;
-        width: 445px;
+        width: 338px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     /*contacto media 768px*/
     .contactoFormulario .contactoFormulario__formulario {
         font-size: 28px;
-        width: 390px;
+        width: 338px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-
-
 }
-
-
-
 
 /*MEDIA QUERIS  600px */
 
 @media screen and (max-width: 600px) {
 
-    header .navbar {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-
-    .menu__link {
-        font-size: 24px;
+    footer h3 {
+        font-size: 23px;
     }
 
     /*inicio media 600px*/
-
-    .sectionUno .sectionUno__titulo {
-        font-size: 30px;
-    }
-
-    .sectionUno .sectionUno__logoCentral {
-        height: 300px;
-    }
-
-    .sectionDos .sectionDos__lista {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
     .sectionDos .seccionDos__seccionesImg {
         height: 150px;
     }
 
 
-    footer ul li img {
-        height: 35px;
-    }
-
-    /*media estilos 600px*/
-    .estilosSeccionImg {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .estilosSeccionImg .estilosSeccionImg__cortesEstilos {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .videoMejores {
-        display: none;
-    }
-
     /*media sobre mi 600px*/
-    .menu__link {
-        font-size: 15px;
-    }
-
-    .SobreMiJoacoImgParrafo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .SobreMiJoacoImgParrafo__joacoImagen {
-        height: 250px;
-    }
-
     .SobreMiJoacoImgParrafo__quienSoy {
         height: 276px;
         width: 399px;
-    }
-
-    .SobreMiJoacoImgParrafo__quienSoy h2 {
-        font-size: 40px;
-    }
-
-    .SobreMiJoacoImgParrafo__quienSoy p {
-        font-size: 20px;
-        padding: 40px 40px 40px 40px;
     }
 
     /*media reservas 600px*/
@@ -709,7 +545,6 @@ td {
         font-size: 23px;
         width: 333px;
     }
-
 
     /*contacto media 600px*/
     .contactoFormulario .contactoFormulario__formulario {
@@ -721,9 +556,8 @@ td {
     .ServiciosTabla__tabla,
     th,
     td {
-        font-size: 20px;
+        font-size: 45px;
     }
-
 
 }
 
@@ -731,100 +565,29 @@ td {
 
 @media screen and (max-width: 480px) {
 
-    header .navbar {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .navbar__logoImagen {
-        height: 50px;
-    }
-
-    .menu__link {
-        font-size: 12px;
+    footer h3 {
+        font-size: 18px;
     }
 
     /*media inicio 480px*/
 
-    .sectionUno .sectionUno__titulo {
-        font-size: 30px;
-    }
 
     .sectionUno .sectionUno__logoCentral {
         height: 250px;
     }
 
-    .sectionDos .sectionDos__lista {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .sectionDos .seccionDos__seccionesImg {
-        height: 150px;
-    }
-
-    footer h3 {
-        font-size: 23px;
-    }
-
-    footer ul li img {
-        height: 30px;
-    }
-
-    .copy {
-        font-size: 15px
-    }
-
-    .joako {
-        font-size: 15px;
-    }
-
-    /*media estilos 480px*/
-
-    .estilosSeccionImg {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .estilosSeccionImg .estilosSeccionImg__cortesEstilos {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .videoMejores {
-        display: none;
-
-    }
-
     /*media sobre mi 480px*/
-
-    .SobreMiJoacoImgParrafo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
     .SobreMiJoacoImgParrafo__joacoImagen {
         height: 179px;
     }
 
     .SobreMiJoacoImgParrafo__quienSoy {
-        height: 344px;
+        height: 391px;
         width: 313px;
     }
 
-    .SobreMiJoacoImgParrafo__quienSoy h2 {
-        font-size: 40px;
-    }
 
-    .SobreMiJoacoImgParrafo__quienSoy p {
-        font-size: 20px;
-        padding: 40px 40px 40px 40px;
-    }
 
     /*media reservas 480px*/
     .reservasFormulario__formulario {
@@ -843,7 +606,7 @@ td {
     .ServiciosTabla__tabla,
     th,
     td {
-        font-size: 19px;
+        font-size: 40px;
     }
 
 }
@@ -852,88 +615,30 @@ td {
 
 @media screen and (max-width: 320px) {
 
-    header .navbar {
-        flex-wrap: wrap;
-        justify-content: center;
+    footer h3 {
+        font-size: 16px;
     }
 
-    .navbar__logoImagen {
-        height: 50px;
-    }
-
-    .menu__link {
-        font-size: 12px;
-    }
-
+    
     /* media inicio 320px*/
-
-    .sectionUno .sectionUno__titulo {
-        font-size: 30px;
-    }
 
     .sectionUno .sectionUno__logoCentral {
         height: 200px;
     }
 
-    .sectionDos .sectionDos__lista {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .sectionDos .seccionDos__seccionesImg {
-        height: 100px;
+        height: 140px;
     }
 
-    footer h3 {
-        font-size: 21px;
-    }
-
-    footer ul li img {
-        height: 25px;
-    }
-
-    .copy {
-        font-size: 10px
-    }
-
-    .joako {
-        font-size: 10px;
-    }
-
-    /* media estilos 320px*/
-    .estilosSeccionImg {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .estilosSeccionImg .estilosSeccionImg__cortesEstilos {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .videoMejores {
-        display: none;
-
-    }
 
     /* media sobre mi 320px*/
 
-    .SobreMiJoacoImgParrafo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
     .SobreMiTituloLogo__logoImagen {
-        height: 160px;
+        height: 150px;
     }
 
     .SobreMiJoacoImgParrafo__joacoImagen {
-        height: 179px;
+        height: 150px;
     }
 
     .SobreMiJoacoImgParrafo__quienSoy {
@@ -945,29 +650,27 @@ td {
         font-size: 35px;
     }
 
-    .SobreMiJoacoImgParrafo__quienSoy p {
-        font-size: 20px;
-        padding: 40px 40px 40px 40px;
-    }
-
     /*media reservas 320px*/
     .reservasFormulario__formulario {
-        font-size: 18px;
-        width: 258px;
+    width: 294px;
     }
 
 
     /*contacto media 320px*/
     .contactoFormulario .contactoFormulario__formulario {
-        font-size: 28px;
-        width: 256px;
+        font-size: 18px;
+        width: 238px;
     }
+
+    textarea {
+        height: 85px;
+        width: 197px;}
 
     /*servicios media 320px*/
     .ServiciosTabla__tabla,
     th,
     td {
-        font-size: 17px;
+        font-size: 35px;
     }
 }
 
@@ -988,6 +691,7 @@ td {
         color: #aa0000;
         font-size: 35px;}
 
+
 @keyframes twister {
     from {
         transform: rotate(0deg);
@@ -997,3 +701,4 @@ td {
         transform: rotate(360deg);
     }
 }
+
