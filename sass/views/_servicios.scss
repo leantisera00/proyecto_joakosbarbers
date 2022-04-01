@@ -1,0 +1,61 @@
+.ServiciosTituloLogo {
+&__titulo {
+    background-color: white;
+    border: black solid 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+&__logo {
+    display: flex;
+    justify-content: center;
+}
+}
+
+.ServiciosTabla {
+    margin-top: 30px;
+    &__tabla, th, td {
+    border: 5px solid;
+    background-color: white;
+    font-size: 60px;
+    text-align: center;
+}
+}
+
+/*MEDIA QUERIS  600px */
+@media screen and (max-width: 600px) {
+    .ServiciosTabla{
+    &__tabla,th, td {
+        font-size: 45px;
+    }
+}
+}
+
+/*MEDIA QUERIS 480px*/
+@media screen and (max-width: 480px) {
+    .ServiciosTabla{
+    &__tabla,
+    th,
+    td {
+        font-size: 40px;
+    }
+}
+}
+
+/*MEDIA QUERIS 320px*/
+@media screen and (max-width: 320px) {
+    .ServiciosTabla{
+        &__tabla, th, td {
+        font-size: 35px;
+    }
+}
+}
+
+
+
+
+
+
+

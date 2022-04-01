@@ -1,0 +1,65 @@
+.ContactoTituloLogo {
+&__logoCentral {
+    display: flex;
+    justify-content: center;
+}
+}
+.contactoFormulario {    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+   
+    &__formulario {
+        background: white;
+        border: solid black 5px;
+        font-size: 30px;
+        width: 814px;
+    }
+    
+    textarea {
+        height: 100px;
+        width: 225px;
+    }
+    
+}
+
+/*MEDIA QUERIS 768px*/
+@media screen and (max-width: 768px) {
+    .contactoFormulario {
+    &__formulario {
+        font-size: 28px;
+        width: 338px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+}
+
+/*MEDIA QUERIS  600px */
+@media screen and (max-width: 600px) {
+.contactoFormulario {
+&__formulario {
+    font-size: 28px;
+    width: 390px;
+}
+}
+}
+
+/*MEDIA QUERIS 320px*/
+@media screen and (max-width: 320px) {
+    .contactoFormulario {
+    &__formulario {
+        font-size: 18px;
+        width: 238px;
+
+}
+textarea {
+    height: 85px;
+    width: 197px;}
+}
+}
+
+
+

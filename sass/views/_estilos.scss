@@ -1,0 +1,75 @@
+.estilosSeccionImg {
+    &__logo {    display: flex;
+        justify-content: center;
+    }
+    
+    &_peinados{     display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;}
+    
+}
+
+.EstilosCarrousel{
+&__tituloMejoresEstilos  h3{
+    background-color: $color-principal;
+    border: black 5px solid;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+&__carrouselParrafo {
+    font-size: 20px;
+    background-color: black;
+}
+
+.carousel {margin-bottom: 20px; border: black 5px solid;}
+}
+
+/*MEDIA QUERIS 1200px 1*/
+@media screen and (max-width: 1200px) {
+
+.estilosSeccionImg {
+&__tiposDeEstilosLogo {
+    height: 160px;
+}
+&__estiloImagenes {
+    height: 160px;
+}
+}
+}
+
+/*MEDIA QUERIS 1024px 2*/
+@media screen and (max-width: 1024px) {
+    .estilosSeccionImg {
+    &__tiposDeEstilosLogo {
+        height: 140px;
+    }
+    &__estiloImagenes {
+        height: 140px;
+    }
+}
+}
+
+/*MEDIA QUERIS 768px*/
+@media screen and (max-width: 768px) {
+    .estilosSeccionImg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

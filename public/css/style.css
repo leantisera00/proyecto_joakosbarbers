@@ -1,704 +1,446 @@
 /*imports*/
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-/* Normalize*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+/*MISCELANEOUS*/
+/* RESET*/
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
 
-}
-
-
+/*GLOBALS*/
 html {
-    font-family: 'Bebas Neue', cursive;
-    background: linear-gradient(135deg, rgba(255, 0, 0, 1) 0%, rgba(255, 0, 4, 1) 10%, rgba(255, 255, 255, 1) 11%, rgba(255, 255, 255, 1) 20%, rgba(38, 0, 255, 1) 21%, rgba(38, 0, 255, 1) 30%, rgba(255, 255, 255, 1) 31%, rgba(255, 255, 255, 1) 40%, rgba(255, 0, 0, 1) 41%, rgba(255, 0, 0, 1) 50%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 1) 60%, rgba(0, 8, 255, 1) 61%, rgba(0, 8, 255, 1) 70%, rgba(255, 255, 255, 1) 71%, rgba(255, 255, 255, 1) 80%, rgba(255, 0, 0, 1) 81%, rgba(255, 0, 0, 1) 90%, rgba(255, 255, 255, 1) 91%, rgba(255, 255, 255, 1) 100%);
-    font-size: 62.5%;
-}
+  font-family: 'Bebas Neue', cursive;
+  background: linear-gradient(135deg, red 0%, #ff0004 10%, white 11%, white 20%, #2600ff 21%, #2600ff 30%, white 31%, white 40%, red 41%, red 50%, white 51%, white 60%, #0008ff 61%, #0008ff 70%, white 71%, white 80%, red 81%, red 90%, white 91%, white 100%);
+  font-size: 62.5%; }
 
-/*globals*/
 li {
-    list-style: none;
-}
+  list-style: none; }
 
 a {
-    text-decoration: none;
-    color: #aa0000;
-    font-size: 30px;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: 'Bebas Neue', cursive;
-    background: linear-gradient(135deg, rgba(255, 0, 0, 1) 0%, rgba(255, 0, 4, 1) 10%, rgba(255, 255, 255, 1) 11%, rgba(255, 255, 255, 1) 20%, rgba(38, 0, 255, 1) 21%, rgba(38, 0, 255, 1) 30%, rgba(255, 255, 255, 1) 31%, rgba(255, 255, 255, 1) 40%, rgba(255, 0, 0, 1) 41%, rgba(255, 0, 0, 1) 50%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 1) 60%, rgba(0, 8, 255, 1) 61%, rgba(0, 8, 255, 1) 70%, rgba(255, 255, 255, 1) 71%, rgba(255, 255, 255, 1) 80%, rgba(255, 0, 0, 1) 81%, rgba(255, 0, 0, 1) 90%, rgba(255, 255, 255, 1) 91%, rgba(255, 255, 255, 1) 100%);
-    font-size: 62.5%;
-    line-height: normal
-}
-
-h1 {color: black;
-font-size: 30px;
-background-color: white;
-border: black solid 5px;
-margin-top: 25px;
-margin-bottom: 20px;
-display: flex;
-    justify-content: center;}
-
-
-/*header*/
-.navbar {
-    background: linear-gradient(to top, #926229, #FAF3A0, #926229);
-    border: solid black 5px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    justify-content: center;
-
-}
-
-.navbar__menu {
-    display: flex;
-    gap: 20px;
-}
-
-.navbar__logoImagen {
-    width: 64px;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: #aa0000;
-}
-
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .show>.nav-link {
-    color: #aa0000;
-}
-
-/*comienzo de css en distintas cajas INICIO*/
-
-.inicioMain {
-    min-height: 100vh;
-}
+  text-decoration: none;
+  color: #aa0000;
+  font-size: 30px; }
 
 a {
-    transition: 0.2s;
-}
+  transition: 0.2s; }
 
 a:hover {
-    background-color: #f1f100d3;
-    box-shadow: 0 0 10px #f1f100d3, 0 0 40px #f1f100d3, 0 0 80px #f1f100d3;
-    border-radius: 50px;
-}
+  background-color: #f1f100d3;
+  box-shadow: 0 0 10px #f1f100d3, 0 0 40px #f1f100d3, 0 0 80px #f1f100d3;
+  border-radius: 50px; }
 
-.sectionUno__titulo {
-    font-size: 30px;
-    background-color: white;
-    border: solid black 5px;
-    text-align: center;
-    margin-bottom: 20px;
-}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Bebas Neue', cursive;
+  background: linear-gradient(135deg, red 0%, #ff0004 10%, white 11%, white 20%, #2600ff 21%, #2600ff 30%, white 31%, white 40%, red 41%, red 50%, white 51%, white 60%, #0008ff 61%, #0008ff 70%, white 71%, white 80%, red 81%, red 90%, white 91%, white 100%);
+  font-size: 62.5%;
+  line-height: normal; }
 
-.sectionUno__logoCentral {
-    display: flex;
-    justify-content: center;
-}
-
-.sectionDos__lista {
-    
-    margin-top: 20px;
-
-}
-
-.sectionDos {
-    display: flex;
-    justify-content: center;
-}
-
-.sectionDos__lista {
-    display: flex;
-    justify-content: center;
-}
-
-
-
-/*mismo footer para todas las secciones*/
-footer {
-    background: linear-gradient(to top, #926229, #FAF3A0, #926229);
-    border: solid black 5px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-
-footer h3 {
-    font-size: 30px;
-    color: #aa0000;
-    display: flex;
-    justify-content: center;
-}
-
-footer .redes {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.sectionUno .sectionUno__logoCentral img {
-    animation: twister 4s infinite alternate linear;
-}
-
-
-/*Seccion sobreMi*/
-
-/*seccion sobre mi css*/
-.sobreMiMain {
-    min-height: 100vh;
-}
-
-.SobreMiTituloLogo__titulo {
-    background-color: white;
-    border: black solid 5px;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.SobreMiTituloLogo__contenedorLogo {
-    display: flex;
-    justify-content: center;
-}
-
-.SobreMiJoacoImgParrafo {display: flex;
-    justify-content: center;
-    
-}
-
-.Sobremi__imgPar{margin-top: 20px;
-margin-bottom: 20px;}
-
-
-.SobreMiJoacoImgParrafo__quienSoy {
-    background-color: white;
-    border: black solid 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-
-}
-
-.SobreMiJoacoImgParrafoImg {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
-.SobreMiJoacoImgParrafo__quienSoy h2 {
-    font-size: 50px;
-
-}
-
-.SobreMiJoacoImgParrafo__quienSoy p {
-    font-size: 30px;
-    padding: 50px 50px 50px 50px;
-}
-
-.row {
-    --bs-gutter-x: 0;
-    --bs-gutter-y: 0;
-}
-
-
-
-/*Seccion estilos*/
-/*seccion estilos css*/
+h1 {
+  color: black;
+  font-size: 30px;
+  background-color: white;
+  border: black solid 5px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center; }
 
 .h5,
 h5 {
-    font-size: 50px;
-    color: firebrick;
-    /* border: black; */
-    background: white;
-    border: black solid 5px;
-}
+  font-size: 50px;
+  color: #aa0000;
+  border: black;
+  background: white;
+  border: black solid 5px; }
 
-.Estilos__carrouselParrafo {
+.row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0; }
+
+main {
+  min-height: 100vh; }
+
+@keyframes twister {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/*PARTIALS*/
+/*header*/
+header .navbar {
+  background: linear-gradient(to top, #926229, #FAF3A0, #926229);
+  border: solid black 5px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center; }
+
+header .navLink {
+  color: #aa0000;
+  font-size: 35px; }
+
+@media screen and (max-width: 1200px) {
+  header .navbar {
+    flex-wrap: wrap;
+    justify-content: center; } }
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: center; }
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    gap: 50px; } }
+
+footer {
+  background: linear-gradient(to top, #926229, #FAF3A0, #926229);
+  border: solid black 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  footer h3 {
+    font-size: 30px;
+    color: #aa0000;
+    display: flex;
+    justify-content: center; }
+  footer .redes {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center; }
+
+/*MEDIA QUERIS  600px */
+@media screen and (max-width: 600px) {
+  footer h3 {
+    font-size: 23px; } }
+
+/*MEDIA QUERIS 480px*/
+@media screen and (max-width: 480px) {
+  footer h3 {
+    font-size: 18px; } }
+
+/*MEDIA QUERIS 320px*/
+@media screen and (max-width: 320px) {
+  footer h3 {
+    font-size: 16px; } }
+
+/*VIEWS*/
+.sectionUno__titulo {
+  font-size: 30px;
+  background-color: white;
+  border: solid black 5px;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.sectionUno__logoCentral {
+  display: flex;
+  justify-content: center; }
+  .sectionUno__logoCentral img {
+    animation: twister 4s infinite alternate linear; }
+
+.sectionDos {
+  display: flex;
+  justify-content: center; }
+  .sectionDos__lista {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; }
+
+/*MEDIA QUERIS 1200px 1*/
+@media screen and (max-width: 1200px) {
+  .sectionUno__logoCentral {
+    height: 300px; } }
+
+.sectionDos__lista {
+  gap: 20px; }
+
+/*MEDIA QUERIS  600px */
+@media screen and (max-width: 600px) {
+  .sectionDos__seccionesImg {
+    height: 150px; } }
+
+/*MEDIA QUERIS 480px*/
+@media screen and (max-width: 480px) {
+  .sectionUno__logoCentral {
+    height: 250px; } }
+
+/*MEDIA QUERIS 320px*/
+@media screen and (max-width: 320px) {
+  .sectionUno__logoCentral {
+    height: 200px; }
+  .sectionDos__seccionesImg {
+    height: 140px; } }
+
+.SobreMiTituloLogo__titulo {
+  background-color: white;
+  border: black solid 5px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.SobreMiTituloLogo__contenedorLogo {
+  display: flex;
+  justify-content: center; }
+
+.SobreMiJoacoImgParrafo {
+  display: flex;
+  justify-content: center; }
+  .SobreMiJoacoImgParrafo__imgPar {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .SobreMiJoacoImgParrafo__quienSoy {
+    background-color: white;
+    border: black solid 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    .SobreMiJoacoImgParrafo__quienSoy h2 {
+      font-size: 50px; }
+    .SobreMiJoacoImgParrafo__quienSoy p {
+      font-size: 30px;
+      padding: 50px 50px 50px 50px; }
+  .SobreMiJoacoImgParrafo__Img {
+    display: flex;
+    align-content: center;
+    justify-content: center; }
+
+/*MEDIA QUERIS 1200px 1*/
+@media screen and (max-width: 1200px) {
+  .SobreMiJoacoImgParrafo__joacoImagen {
+    height: 350px; }
+  .SobreMiJoacoImgParrafo__quienSoy h2 {
+    font-size: 40px; }
+  .SobreMiJoacoImgParrafo__quienSoy p {
     font-size: 20px;
-    background-color: black;
-}
+    padding: 40px 40px 40px 40px; } }
 
-.EstiloTitulo__titulo {
-    background-color: white;
-    border: black solid 5px;
-    text-align: center;
-    font-size: 30px;
-    margin-top: 25px;
-    margin-bottom: 20px;
-}
+/*MEDIA QUERIS 1024px 2*/
+@media screen and (max-width: 1024px) {
+  .SobreMiJoacoImgParrafo__joacoImagen {
+    height: 301px; }
+  .SobreMiJoacoImgParrafo__quienSoy {
+    width: 458px; } }
 
-.estilos__secciontipos {
-    display: flex;
-    justify-content: space-evenly;
-}
+/*MEDIA QUERIS 768px*/
+@media screen and (max-width: 768px) {
+  .SobreMiJoacoImgParrafo__joacoImagen {
+    height: 250px; }
+  .SobreMiJoacoImgParrafo__quienSoy {
+    width: 399px; } }
 
-.tituloMejoresEstilos .tituloMejoresEstilos__text {
-    background-color: #aa0000;
-    border: black 5px solid;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: white;
-}
+/*MEDIA QUERIS  600px */
+@media screen and (max-width: 600px) {
+  .SobreMiJoacoImgParrafo__quienSoy {
+    width: 399px; } }
 
-.estilosSeccionImg__logo {    display: flex;
-    justify-content: center;
-}
+/*MEDIA QUERIS 480px*/
+@media screen and (max-width: 480px) {
+  .SobreMiJoacoImgParrafo__joacoImagen {
+    height: 179px; } }
 
-.estilosSeccionImg_peinados{     display: flex;
-justify-content: space-evenly;
-flex-wrap: wrap;
-gap: 20px;}
+/*MEDIA QUERIS 320px*/
+@media screen and (max-width: 320px) {
+  .SobreMiTituloLogo__logoImagen {
+    height: 150px; }
+  .SobreMiJoacoImgParrafo__joacoImagen {
+    height: 150px; }
+  .SobreMiJoacoImgParrafo__quienSoy {
+    width: 241px; }
+    .SobreMiJoacoImgParrafo__quienSoy h2 {
+      font-size: 35px; } }
 
-.videoMejores {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
+.ServiciosTituloLogo__titulo {
+  background-color: white;
+  border: black solid 5px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 20px; }
 
-.carousel {margin-bottom: 20px; border: black 5px solid;}
+.ServiciosTituloLogo__logo {
+  display: flex;
+  justify-content: center; }
 
-/*Seccion reservas*/
-
-/*seccion reservas css*/
-.mainReservas {
-    min-height: 100vh;
-}
-
-.reservasTituloLogo__logo {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.reservasFormulario {display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;}
-
-
-
-.reservasFormulario__formulario {
-    background: white;
-    border: solid black 5px;
-    font-size: 30px;
-    width: 814px;
-}
-
-.reservasUbiPar__logoUbicacion {
-    display: flex;
-    justify-content: center;
-}
-
-.reservasUbiPar p {
-    background-color: white;
-    border: black solid 5px;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-/*Seccion contacto*/
-/*seccion contacto css*/
-
-.mainContacto {
-    min-height: 100vh;
-}
-
-
-.ContactoTituloLogo .ContactoTituloLogo__logoCentral {
-    display: flex;
-    justify-content: center;
-}
-.contactoFormulario {    display: flex;
-    justify-content: center;
-    margin-top: 80px;
-    margin-bottom: 20px;
-    
-}
-
-.contactoFormulario .contactoFormulario__formulario {
-    background: white;
-    border: solid black 5px;
-    font-size: 30px;
-    width: 814px;
-}
-
-textarea {
-    height: 100px;
-    width: 225px;
-}
-
-/*Seccion servicios*/
-
-/*seccion servicios css*/
-
-.mainServicios {
-    min-height: 100vh;
-}
-
-.ServiciosTituloLogo .ServiciosTituloLogo__titulo {
-    background-color: white;
-    border: black solid 5px;
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-.ServiciosTituloLogo .ServiciosTituloLogo__logo {
-    display: flex;
-    justify-content: center;
-}
-
-.ServiciosTabla {margin-top: 30px;}
-
-.ServiciosTabla__tabla,
-th,
-td {
+.ServiciosTabla {
+  margin-top: 30px; }
+  .ServiciosTabla__tabla, .ServiciosTabla th, .ServiciosTabla td {
     border: 5px solid;
     background-color: white;
     font-size: 60px;
-    text-align: center;
-}
-
-
-/*MEDIA QUERIS 1200px 1*/
-
-@media screen and (max-width: 1200px) {
-
-    header .navbar {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    /*inicio media 1200px*/
-
-    .sectionUno .sectionUno__logoCentral {
-        height: 300px;
-    }
-
-    .sectionDos .sectionDos__lista {
-        gap: 20px;
-    }
-
-    /*estilos media 1200px*/
-    .estilosSeccionImg .estilosSeccionImg__tiposDeEstilosLogo {
-        height: 160px;
-    }
-
-    .estilosSeccionImg .estilosSeccionImg__estiloImagenes {
-        height: 160px;
-    }
-
-    /*sobre mi media 1200px*/
-    .SobreMiJoacoImgParrafo__joacoImagen {
-        height: 350px;
-    }
-
-    .SobreMiJoacoImgParrafo__quienSoy {
-        height: 350px;
-    }
-
-    .SobreMiJoacoImgParrafo__quienSoy h2 {
-        font-size: 40px;
-    }
-
-    .SobreMiJoacoImgParrafo__quienSoy p {
-        font-size: 20px;
-        padding: 40px 40px 40px 40px;
-    }
-
-
-}
-
-/*MEDIA QUERIS 1024px 2*/
-
-@media screen and (max-width: 1024px) {
-
-    header .navbar {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    /*estilos media 1024px*/
-    .estilosSeccionImg .estilosSeccionImg__tiposDeEstilosLogo {
-        height: 140px;
-    }
-
-    .estilosSeccionImg .estilosSeccionImg__estiloImagenes {
-        height: 140px;
-    }
-
-    /*sobre mi media 1024px*/
-    .SobreMiJoacoImgParrafo__joacoImagen {
-        height: 301px;
-    }
-
-    .SobreMiJoacoImgParrafo__quienSoy {
-        height: 345px;
-        width: 458px;
-    }
-
-
-    /*reservas media 1024px*/
-    .reservasFormulario__formulario {
-        font-size: 25px;
-        width: 618px;
-    }
-
-    /*contacto media 1024px*/
-    .contactoFormulario .contactoFormulario__formulario {
-        font-size: 28px;
-        width: 542px;
-    }
-
-}
-
-/*MEDIA QUERIS 768px*/
-
-@media screen and (max-width: 768px) {
-
-    /*estilos media 768px*/
-
-    .estilosSeccionImg {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /*sobre mi media 768px*/
-
-    .SobreMiJoacoImgParrafo__joacoImagen {
-        height: 250px;
-    }
-
-    .SobreMiJoacoImgParrafo__quienSoy {
-        height: 314px;
-        width: 399px;
-    }
-
-
-    /*reservas media 768px*/
-    .reservasFormulario__formulario {
-        font-size: 23px;
-        width: 338px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /*contacto media 768px*/
-    .contactoFormulario .contactoFormulario__formulario {
-        font-size: 28px;
-        width: 338px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-}
+    text-align: center; }
 
 /*MEDIA QUERIS  600px */
-
 @media screen and (max-width: 600px) {
-
-    footer h3 {
-        font-size: 23px;
-    }
-
-    /*inicio media 600px*/
-
-    .sectionDos .seccionDos__seccionesImg {
-        height: 150px;
-    }
-
-
-    /*media sobre mi 600px*/
-    .SobreMiJoacoImgParrafo__quienSoy {
-        height: 276px;
-        width: 399px;
-    }
-
-    /*media reservas 600px*/
-    .reservasFormulario__formulario {
-        font-size: 23px;
-        width: 333px;
-    }
-
-    /*contacto media 600px*/
-    .contactoFormulario .contactoFormulario__formulario {
-        font-size: 28px;
-        width: 390px;
-    }
-
-    /*servicios media 600px*/
-    .ServiciosTabla__tabla,
-    th,
-    td {
-        font-size: 45px;
-    }
-
-}
+  .ServiciosTabla__tabla, .ServiciosTabla th, .ServiciosTabla td {
+    font-size: 45px; } }
 
 /*MEDIA QUERIS 480px*/
-
 @media screen and (max-width: 480px) {
-
-    footer h3 {
-        font-size: 18px;
-    }
-
-    /*media inicio 480px*/
-
-
-    .sectionUno .sectionUno__logoCentral {
-        height: 250px;
-    }
-
-    /*media sobre mi 480px*/
-
-    .SobreMiJoacoImgParrafo__joacoImagen {
-        height: 179px;
-    }
-
-    .SobreMiJoacoImgParrafo__quienSoy {
-        height: 391px;
-        width: 313px;
-    }
-
-
-
-    /*media reservas 480px*/
-    .reservasFormulario__formulario {
-        font-size: 20px;
-        width: 302px;
-    }
-
-
-    /*contacto media 480px*/
-    .contactoFormulario .contactoFormulario__formulario {
-        font-size: 28px;
-        width: 256px;
-    }
-
-    /*servicios media 480*/
-    .ServiciosTabla__tabla,
-    th,
-    td {
-        font-size: 40px;
-    }
-
-}
+  .ServiciosTabla__tabla,
+  .ServiciosTabla th,
+  .ServiciosTabla td {
+    font-size: 40px; } }
 
 /*MEDIA QUERIS 320px*/
-
 @media screen and (max-width: 320px) {
+  .ServiciosTabla__tabla, .ServiciosTabla th, .ServiciosTabla td {
+    font-size: 35px; } }
 
-    footer h3 {
-        font-size: 16px;
-    }
+.reservasTituloLogo__logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; }
 
-    
-    /* media inicio 320px*/
+.reservasFormulario {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .reservasFormulario__formulario {
+    background: white;
+    border: solid black 5px;
+    font-size: 30px;
+    width: 814px; }
 
-    .sectionUno .sectionUno__logoCentral {
-        height: 200px;
-    }
+.reservasUbiPar__logoUbicacion {
+  display: flex;
+  justify-content: center; }
 
-    .sectionDos .seccionDos__seccionesImg {
-        height: 140px;
-    }
+.reservasUbiPar p {
+  background-color: white;
+  border: black solid 5px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center; }
 
+/*MEDIA QUERIS 1024px 2*/
+@media screen and (max-width: 1024px) {
+  .reservasFormulario__formulario {
+    font-size: 25px;
+    width: 618px; } }
 
-    /* media sobre mi 320px*/
+/*MEDIA QUERIS 768px*/
+@media screen and (max-width: 768px) {
+  .reservasFormulario__formulario {
+    font-size: 23px;
+    width: 338px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
 
-    .SobreMiTituloLogo__logoImagen {
-        height: 150px;
-    }
+/*MEDIA QUERIS  600px */
+@media screen and (max-width: 600px) {
+  .reservasFormulario__formulario {
+    font-size: 23px;
+    width: 333px; } }
 
-    .SobreMiJoacoImgParrafo__joacoImagen {
-        height: 150px;
-    }
+/*MEDIA QUERIS 480px*/
+@media screen and (max-width: 480px) {
+  .reservasFormulario__formulario {
+    font-size: 20px;
+    width: 302px; } }
 
-    .SobreMiJoacoImgParrafo__quienSoy {
-        height: 426px;
-        width: 241px;
-    }
+/*MEDIA QUERIS 320px*/
+@media screen and (max-width: 320px) {
+  .reservasFormulario__formulario {
+    width: 294px; } }
 
-    .SobreMiJoacoImgParrafo__quienSoy h2 {
-        font-size: 35px;
-    }
+.estilosSeccionImg__logo {
+  display: flex;
+  justify-content: center; }
 
-    /*media reservas 320px*/
-    .reservasFormulario__formulario {
-    width: 294px;
-    }
+.estilosSeccionImg_peinados {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px; }
 
+.EstilosCarrousel__tituloMejoresEstilos h3 {
+  background-color: #aa0000;
+  border: black 5px solid;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white; }
 
-    /*contacto media 320px*/
-    .contactoFormulario .contactoFormulario__formulario {
-        font-size: 18px;
-        width: 238px;
-    }
+.EstilosCarrousel__carrouselParrafo {
+  font-size: 20px;
+  background-color: black; }
 
-    textarea {
-        height: 85px;
-        width: 197px;}
+.EstilosCarrousel .carousel {
+  margin-bottom: 20px;
+  border: black 5px solid; }
 
-    /*servicios media 320px*/
-    .ServiciosTabla__tabla,
-    th,
-    td {
-        font-size: 35px;
-    }
-}
+/*MEDIA QUERIS 1200px 1*/
+@media screen and (max-width: 1200px) {
+  .estilosSeccionImg__tiposDeEstilosLogo {
+    height: 160px; }
+  .estilosSeccionImg__estiloImagenes {
+    height: 160px; } }
 
-@media (min-width: 992px){
-    .navbar-expand-lg .navbar-collapse {
-        display: flex!important;
-        flex-basis: auto;
-        justify-content: center;}
-       
-        .navbar-expand-lg .navbar-nav {
-            flex-direction: row;
-            gap: 50px;}
-    
-    
-    }
-    
-    .navbar-light .navbar-nav .nav-link {
-        color: #aa0000;
-        font-size: 35px;}
+/*MEDIA QUERIS 1024px 2*/
+@media screen and (max-width: 1024px) {
+  .estilosSeccionImg__tiposDeEstilosLogo {
+    height: 140px; }
+  .estilosSeccionImg__estiloImagenes {
+    height: 140px; } }
 
+/*MEDIA QUERIS 768px*/
+@media screen and (max-width: 768px) {
+  .estilosSeccionImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
-@keyframes twister {
-    from {
-        transform: rotate(0deg);
-    }
+.ContactoTituloLogo__logoCentral {
+  display: flex;
+  justify-content: center; }
 
-    to {
-        transform: rotate(360deg);
-    }
-}
+.contactoFormulario {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 20px; }
+  .contactoFormulario__formulario {
+    background: white;
+    border: solid black 5px;
+    font-size: 30px;
+    width: 814px; }
+  .contactoFormulario textarea {
+    height: 100px;
+    width: 225px; }
 
+/*MEDIA QUERIS 768px*/
+@media screen and (max-width: 768px) {
+  .contactoFormulario__formulario {
+    font-size: 28px;
+    width: 338px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+/*MEDIA QUERIS  600px */
+@media screen and (max-width: 600px) {
+  .contactoFormulario__formulario {
+    font-size: 28px;
+    width: 390px; } }
+
+/*MEDIA QUERIS 320px*/
+@media screen and (max-width: 320px) {
+  .contactoFormulario__formulario {
+    font-size: 18px;
+    width: 238px; }
+  .contactoFormulario textarea {
+    height: 85px;
+    width: 197px; } }

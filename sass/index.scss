@@ -1,0 +1,25 @@
+/*imports*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*MISCELANEOUS*/
+@import './misc/variables';
+@import './misc/normalize';
+@import './misc/animation';
+
+/*PARTIALS*/
+@import './partials/header';
+@import './partials/footer';
+
+/*VIEWS*/ 
+@import './views/home';
+@import './views/sobremi';
+@import './views/servicios';
+@import './views/reservas';
+@import './views/estilos';
+@import './views/contacto';
+
+
+
+
+
+
