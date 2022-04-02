@@ -1,75 +1,79 @@
-.SobreMiTituloLogo{
-&__titulo {
-    background-color: white;
-    border: black solid 5px;
-    font-size: 30px;
+.SobreMiTituloLogo {
+    &__titulo {
+        background-color: white;
+        border: black solid 5px;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    &__contenedorLogo {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.SobreMiJoacoImgParrafo {
     display: flex;
-    align-items: center;
     justify-content: center;
-}
 
+    &__imgPar {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 
-&__contenedorLogo {
-    display: flex;
-    justify-content: center;
-}
-}
+    &__quienSoy {
+        background-color: white;
+        border: black solid 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
 
-.SobreMiJoacoImgParrafo {display: flex;
-    justify-content: center;
-    
-    &__imgPar{margin-top: 20px;
-        margin-bottom: 20px;}
-       
-     &__quienSoy {
-            background-color: white;
-            border: black solid 5px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
+        h2 {
+            font-size: 50px;
 
-            h2 {
-                font-size: 50px;
-            
-            }
-
-            p {
-                font-size: 30px;
-                padding: 50px 50px 50px 50px;
-            }
-        
-        
         }
 
-        &__Img {
-            display: flex;
-            align-content: center;
-            justify-content: center;
+        p {
+            font-size: 30px;
+            padding: 50px 50px 50px 50px;
         }
-    
+
+
+    }
+
+    &__Img {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
 }
 
 /*MEDIA QUERIS 1200px 1*/
 @media screen and (max-width: 1200px) {
-    .SobreMiJoacoImgParrafo{
-    
-    &__joacoImagen {
-        height: 350px;
-    }
+    .SobreMiJoacoImgParrafo {
 
-    &__quienSoy {
-        h2 {
-            font-size: 40px;
+        &__joacoImagen {
+            height: 350px;
         }
-        p {
-            font-size: 20px;
-            padding: 40px 40px 40px 40px;
+
+        &__quienSoy {
+            h2 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 20px;
+                padding: 40px 40px 40px 40px;
+            }
         }
     }
-}
 
 
 }
@@ -77,34 +81,34 @@
 /*MEDIA QUERIS 1024px 2*/
 @media screen and (max-width: 1024px) {
 
-    .SobreMiJoacoImgParrafo{
-    &__joacoImagen {
-        height: 301px;
-    }
+    .SobreMiJoacoImgParrafo {
+        &__joacoImagen {
+            height: 301px;
+        }
 
-    &__quienSoy {
-        width: 458px;
+        &__quienSoy {
+            width: 458px;
+        }
     }
-}
 
 }
 
 /*MEDIA QUERIS 768px*/
 @media screen and (max-width: 768px) {
-.SobreMiJoacoImgParrafo{
-&__joacoImagen {
-    height: 250px;
-}
+    .SobreMiJoacoImgParrafo {
+        &__joacoImagen {
+            height: 250px;
+        }
 
-&__quienSoy {
-    width: 399px;
-}
-}
+        &__quienSoy {
+            width: 399px;
+        }
+    }
 }
 
 /*MEDIA QUERIS  600px */
 @media screen and (max-width: 600px) {
-    .SobreMiJoacoImgParrafo{
+    .SobreMiJoacoImgParrafo {
         &__quienSoy {
             width: 399px;
         }
@@ -113,45 +117,34 @@
 
 /*MEDIA QUERIS 480px*/
 @media screen and (max-width: 480px) {
-    .SobreMiJoacoImgParrafo{
-    &__joacoImagen {
-        height: 179px;
+    .SobreMiJoacoImgParrafo {
+        &__joacoImagen {
+            height: 179px;
+        }
     }
-}
 }
 
 /*MEDIA QUERIS 320px*/
 @media screen and (max-width: 320px) {
-    .SobreMiTituloLogo{
-    &__logoImagen {
-        height: 150px;
-    }
-}
-.SobreMiJoacoImgParrafo{
-
-    &__joacoImagen {
-        height: 150px;
-    }
-
-    &__quienSoy {
-        width: 241px;
-        h2 {
-            font-size: 35px;
+    .SobreMiTituloLogo {
+        &__logoImagen {
+            height: 150px;
         }
     }
 
+    .SobreMiJoacoImgParrafo {
+
+        &__joacoImagen {
+            height: 150px;
+        }
+
+        &__quienSoy {
+            width: 241px;
+
+            h2 {
+                font-size: 35px;
+            }
+        }
+
+    }
 }
-}
-
-        
-
-
-
-
-
-
-
-
-
-
-

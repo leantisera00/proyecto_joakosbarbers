@@ -1,55 +1,58 @@
-.reservasTituloLogo{
-&__logo {
+.reservasTituloLogo {
+    &__logo {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+.reservasFormulario {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-}
-}
-
-.reservasFormulario {display: flex;
-    justify-content: center;
-    margin-top: 20px;
     margin-bottom: 20px;
+
     &__formulario {
         background: white;
         border: solid black 5px;
         font-size: 30px;
         width: 814px;
-    }}
-
-
-
-
-
-.reservasUbiPar{
-
-&__logoUbicacion {
-    display: flex;
-    justify-content: center;
+    }
 }
 
- p {
-    background-color: white;
-    border: black solid 5px;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-}
+
+
+
+
+.reservasUbiPar {
+
+    &__logoUbicacion {
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+        background-color: white;
+        border: black solid 5px;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /*MEDIA QUERIS 1024px 2*/
 @media screen and (max-width: 1024px) {
-    .reservasFormulario{
-    &__formulario {
-        font-size: 25px;
-        width: 618px;
+    .reservasFormulario {
+        &__formulario {
+            font-size: 25px;
+            width: 618px;
+        }
     }
-}
 }
 
 /*MEDIA QUERIS 768px*/
 @media screen and (max-width: 768px) {
-    .reservasFormulario{
+    .reservasFormulario {
         &__formulario {
             font-size: 23px;
             width: 338px;
@@ -58,41 +61,33 @@
             align-items: center;
         }
     }
-    }
+}
 
 /*MEDIA QUERIS  600px */
- @media screen and (max-width: 600px) {
-        .reservasFormulario{
-            &__formulario {
-                font-size: 23px;
-                width: 333px;
-            }
+@media screen and (max-width: 600px) {
+    .reservasFormulario {
+        &__formulario {
+            font-size: 23px;
+            width: 333px;
         }
-        }
+    }
+}
 
 /*MEDIA QUERIS 480px*/
 @media screen and (max-width: 480px) {
-    .reservasFormulario{
+    .reservasFormulario {
         &__formulario {
             font-size: 20px;
-        width: 302px;
+            width: 302px;
         }
     }
-    }
+}
 
-    /*MEDIA QUERIS 320px*/
-    @media screen and (max-width: 320px) {
-        .reservasFormulario{
-            &__formulario {
-                width: 294px;
+/*MEDIA QUERIS 320px*/
+@media screen and (max-width: 320px) {
+    .reservasFormulario {
+        &__formulario {
+            width: 294px;
         }
-        }
     }
-
-
-
-
-
-
-
-
+}

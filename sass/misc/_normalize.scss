@@ -44,19 +44,21 @@ body {
     line-height: normal;
 }
 
-h1 {color: black;
-font-size: 30px;
-background-color: white;
-border: black solid 5px;
-margin-top: 25px;
-margin-bottom: 20px;
-display: flex;
-    justify-content: center;}
+h1 {
+    color: black;
+    font-size: 30px;
+    background-color: white;
+    border: black solid 5px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
 
-    .h5,
+.h5,
 h5 {
     font-size: 50px;
-    color:$color-principal;
+    color: $color-principal;
     border: black;
     background: white;
     border: black solid 5px;
@@ -67,4 +69,6 @@ h5 {
     --bs-gutter-y: 0;
 }
 
-main {min-height: 100vh;}
+main {
+    min-height: 100vh;
+}

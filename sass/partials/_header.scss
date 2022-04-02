@@ -1,17 +1,19 @@
 /*header*/
-header{
-.navbar {
-    background: $color-footer-header;
-    border: solid black 5px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    justify-content: center;
+header {
+    .navbar {
+        background: $color-footer-header;
+        border: solid black 5px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
 
-}
+    }
 
-.navLink {color: $color-principal;
-    font-size: 35px;}
+    .navLink {
+        color: $color-principal;
+        font-size: 35px;
+    }
 
 }
 
@@ -24,20 +26,22 @@ header{
     header {
 
         .navbar {
-        flex-wrap: wrap;
-        justify-content: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
-}
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
-        display: flex!important;
+        display: flex !important;
         flex-basis: auto;
-        justify-content: center;}
-       
-        .navbar-expand-lg .navbar-nav {
-            flex-direction: row;
-            gap: 50px;}
-      
+        justify-content: center;
     }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+}
