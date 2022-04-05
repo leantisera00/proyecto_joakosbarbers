@@ -1,13 +1,11 @@
 .ContactoTituloLogo {
     &__logoCentral {
-        display: flex;
-        justify-content: center;
+        @include flex (row, center);
     }
 }
 
 .contactoFormulario {
-    display: flex;
-    justify-content: center;
+    @include flex (row, center);
     margin-top: 80px;
     margin-bottom: 20px;
 
@@ -29,11 +27,10 @@
 @media screen and (max-width: 768px) {
     .contactoFormulario {
         &__formulario {
+            @include flex (column, center);
             font-size: 28px;
             width: 338px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+
         }
     }
 

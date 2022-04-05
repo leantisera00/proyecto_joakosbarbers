@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="reservas, horarios, disponibilidad, horas, dias, semana, fecha, abierto, servicios, corte de pelo, corte de barba, perfilado de cejas, ubicacion, lugar, direccion, maps, barrio">
+    <meta name="description" content="Reserva aquí tu dia y horario para venir a la Joako's Barber's">
     <link rel="shortcut icon" href="../../public/img/logo.png">
-    <title>Reservas</title>
+    <title>Reservas - Joako's Barber's</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
@@ -37,7 +39,7 @@
                     <li class="nav-item">
                         <a class="navLink" href="./estilos.html">ESTILOS</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item navbar--active">
                         <a class="navLink" href="./reservas.html">RESERVAS</a>
                     </li>
                     <li class="nav-item">
@@ -61,19 +63,19 @@
         <section class="reservasFormulario row">
             <form class="col-12 reservasFormulario__formulario animate__animated animate__backInLeft" action=""
                 method="post">
-                <label for="nombreyapellido:">Nombre y Apellido:</label>
+                <label class="p-medium" for="nombreyapellido:">Nombre y Apellido:</label>
                 <input type="text" name="nombreyapellido" id="nombreyapellido"><br>
-                <label for="email:">Email:</label>
+                <label class="p-medium" for="email:">Email:</label>
                 <input type="email" name="email" id="email"><br>
-                <label for="celular:"> Numero de celular:</label>
+                <label class="p-medium" for="celular:"> Numero de celular:</label>
                 <input type="number" name="celular" id="celular"><br>
-                <label for="Corte de pelo"> Servicios:</label>
+                <label class="p-medium" for="Corte de pelo"> Servicios:</label>
                 <input type="radio" name="Seleccionunica" id="Corte de pelo" value="Corte de pelo"> Corte de Pelo
                 <input type="radio" name="Seleccionunica" id="Corte de pelo + Barba" value="Corte de pelo + Barba">
                 Corte de Pelo + Barba
                 <input type="radio" name="Seleccionunica" id="Corte de pelo + Barba + Cejas"> Corte de Pelo + Barba+
                 Cejas <br>
-                <label for="fechayhora"> Fecha y hora de tu reserva:</label>
+                <label class="p-medium" for="fechayhora"> Fecha y hora de tu reserva:</label>
                 <input type="datetime-local" name="fechayhora" id="">
 
                 <button class="btn btn-danger " type="submit">Enviar</button>

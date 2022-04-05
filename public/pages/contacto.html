@@ -4,8 +4,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="contacto, queja, sugerencia, comentario, pregunta, critica">
+	<meta name="description" content="Deja aquí tu comentario, consulta o sugerencia sobre nosotros.">
 	<link rel="shortcut icon" href="../../public/img/logo.png">
-	<title>Contacto</title>
+	<title>Contacto - Joako's Barber's</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/style.css">
@@ -30,7 +32,7 @@
 					<li class="nav-item">
 						<a class="navLink" href="./sobremi.html">SOBRE MI</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item navbar--active">
 						<a class="navLink" href="./contacto.html">CONTACTO</a>
 					</li>
 					<li class="nav-item">
@@ -59,20 +61,20 @@
 		</section>
 		<section class="contactoFormulario animate__animated animate__backInLeft row">
 			<form class="col-12 contactoFormulario__formulario" action="" method="post">
-				<label for="nombreyapellido:">Nombre y Apellido:</label>
+				<label class="p-medium" for="nombreyapellido:">Nombre y Apellido:</label>
 				<input type="text" name="nombreyapellido" id="nombreyapellido"><br>
-				<label for="email:">Email:</label>
+				<label class="p-medium" for="email:">Email:</label>
 				<input type="email" name="email" id="email"><br>
-				<label for="celular:"> Numero de celular:</label>
+				<label class="p-medium" for="celular:"> Numero de celular:</label>
 				<input type="number" name="celular" id="celular"><br>
-				<label for="motivo"> Motivo:</label>
+				<label class="p-medium" for="motivo"> Motivo:</label>
 				<select name="motivo" id="motivo">
 					<option value="Queja">Queja</option>
 					<option value="Sugerencia">Sugerencia</option>
 					<option value="Consulta">Consulta</option>
 				</select>
 				<br>
-				<label for="comentario">Comentario:</label><br>
+				<label class="p-medium" for="comentario">Comentario:</label><br>
 				<textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
 				<button class="btn btn-danger btn-lg" type="submit"> Enviar Data</button>
 			</form>

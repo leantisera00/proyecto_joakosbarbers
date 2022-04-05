@@ -1,13 +1,5 @@
 .sectionUno {
 
-    &__titulo {
-        font-size: 30px;
-        background-color: white;
-        border: solid black 5px;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
     &__logoCentral {
         display: flex;
         justify-content: center;
@@ -21,13 +13,11 @@
 }
 
 .sectionDos {
-    display: flex;
-    justify-content: center;
+    @include flex (row, center, center);
 
     &__lista {
         margin-top: 20px;
-        display: flex;
-        justify-content: center;
+        @include flex (row, center, center);
 
     }
 

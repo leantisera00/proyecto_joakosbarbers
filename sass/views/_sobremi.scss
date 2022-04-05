@@ -3,21 +3,19 @@
         background-color: white;
         border: black solid 5px;
         font-size: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex (row, center, center);
+        
     }
 
 
     &__contenedorLogo {
-        display: flex;
-        justify-content: center;
+        @include flex (row, center, center);
+
     }
 }
 
 .SobreMiJoacoImgParrafo {
-    display: flex;
-    justify-content: center;
+    @include flex (row, center, center);
 
     &__imgPar {
         margin-top: 20px;
@@ -28,9 +26,7 @@
         background-color: white;
         border: black solid 5px;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include flex (column, center, center);
         margin-top: 20px;
         margin-bottom: 20px;
 
@@ -48,9 +44,7 @@
     }
 
     &__Img {
-        display: flex;
-        align-content: center;
-        justify-content: center;
+        @include flex (row, center, center);
     }
 
 }

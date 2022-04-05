@@ -1,6 +1,18 @@
 /*imports*/
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 /*MISCELANEOUS*/
+.p-xlarge {
+  padding: 30px; }
+
+.p-large {
+  padding: 25px; }
+
+.p-medium {
+  padding: 20px; }
+
+.p-xsmall {
+  padding: 15px; }
+
 /* RESET*/
 * {
   margin: 0%;
@@ -75,11 +87,17 @@ header .navbar {
   background: linear-gradient(to top, #926229, #FAF3A0, #926229);
   border: solid black 5px;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   gap: 20px;
-  justify-content: center; }
+  flex-wrap: wrap; }
+  header .navbar--active {
+    background-color: #f1f100d3;
+    box-shadow: 0 0 10px #f1f100d3, 0 0 40px #f1f100d3, 0 0 80px #f1f100d3;
+    border-radius: 50px; }
 
-header .navLink {
+header .navLink, header .navbar--active {
   color: #aa0000;
   font-size: 35px; }
 
@@ -101,18 +119,28 @@ footer {
   background: linear-gradient(to top, #926229, #FAF3A0, #926229);
   border: solid black 5px;
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
-  align-items: center; }
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap; }
   footer h3 {
     font-size: 30px;
     color: #aa0000;
     display: flex;
-    justify-content: center; }
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    flex-wrap: wrap; }
   footer .redes {
     display: flex;
-    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: center; }
+    gap: 20px;
+    flex-wrap: nowrap; }
 
 /*MEDIA QUERIS  600px */
 @media screen and (max-width: 600px) {
@@ -130,13 +158,6 @@ footer {
     font-size: 16px; } }
 
 /*VIEWS*/
-.sectionUno__titulo {
-  font-size: 30px;
-  background-color: white;
-  border: solid black 5px;
-  text-align: center;
-  margin-bottom: 20px; }
-
 .sectionUno__logoCentral {
   display: flex;
   justify-content: center; }
@@ -145,11 +166,19 @@ footer {
 
 .sectionDos {
   display: flex;
-  justify-content: center; }
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap; }
   .sectionDos__lista {
     margin-top: 20px;
     display: flex;
-    justify-content: center; }
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    flex-wrap: wrap; }
 
 /*MEDIA QUERIS 1200px 1*/
 @media screen and (max-width: 1200px) {
@@ -181,16 +210,27 @@ footer {
   border: black solid 5px;
   font-size: 30px;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  justify-content: center; }
+  gap: 0;
+  flex-wrap: wrap; }
 
 .SobreMiTituloLogo__contenedorLogo {
   display: flex;
-  justify-content: center; }
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap; }
 
 .SobreMiJoacoImgParrafo {
   display: flex;
-  justify-content: center; }
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap; }
   .SobreMiJoacoImgParrafo__imgPar {
     margin-top: 20px;
     margin-bottom: 20px; }
@@ -198,9 +238,12 @@ footer {
     background-color: white;
     border: black solid 5px;
     display: flex;
+    display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    gap: 0;
+    flex-wrap: wrap;
     margin-top: 20px;
     margin-bottom: 20px; }
     .SobreMiJoacoImgParrafo__quienSoy h2 {
@@ -210,8 +253,11 @@ footer {
       padding: 50px 50px 50px 50px; }
   .SobreMiJoacoImgParrafo__Img {
     display: flex;
-    align-content: center;
-    justify-content: center; }
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    flex-wrap: wrap; }
 
 /*MEDIA QUERIS 1200px 1*/
 @media screen and (max-width: 1200px) {
@@ -262,17 +308,27 @@ footer {
   background-color: white;
   border: black solid 5px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
   font-size: 30px;
   margin-bottom: 20px; }
 
 .ServiciosTituloLogo__logo {
   display: flex;
-  justify-content: center; }
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap; }
 
 .ServiciosTabla {
   margin-top: 30px; }
-  .ServiciosTabla__tabla, .ServiciosTabla th, .ServiciosTabla td {
+  .ServiciosTabla__tabla,
+  .ServiciosTabla th,
+  .ServiciosTabla td {
     border: 5px solid;
     background-color: white;
     font-size: 60px;
@@ -280,7 +336,9 @@ footer {
 
 /*MEDIA QUERIS  600px */
 @media screen and (max-width: 600px) {
-  .ServiciosTabla__tabla, .ServiciosTabla th, .ServiciosTabla td {
+  .ServiciosTabla__tabla,
+  .ServiciosTabla th,
+  .ServiciosTabla td {
     font-size: 45px; } }
 
 /*MEDIA QUERIS 480px*/
@@ -292,17 +350,27 @@ footer {
 
 /*MEDIA QUERIS 320px*/
 @media screen and (max-width: 320px) {
-  .ServiciosTabla__tabla, .ServiciosTabla th, .ServiciosTabla td {
+  .ServiciosTabla__tabla,
+  .ServiciosTabla th,
+  .ServiciosTabla td {
     font-size: 35px; } }
 
 .reservasTituloLogo__logo {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
   margin-top: 20px; }
 
 .reservasFormulario {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
   margin-top: 20px;
   margin-bottom: 20px; }
   .reservasFormulario__formulario {
@@ -313,14 +381,22 @@ footer {
 
 .reservasUbiPar__logoUbicacion {
   display: flex;
-  justify-content: center; }
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap; }
 
 .reservasUbiPar p {
   background-color: white;
   border: black solid 5px;
   font-size: 30px;
   display: flex;
-  justify-content: center; }
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap; }
 
 /*MEDIA QUERIS 1024px 2*/
 @media screen and (max-width: 1024px) {
@@ -335,7 +411,10 @@ footer {
     width: 338px;
     display: flex;
     flex-direction: column;
-    align-items: center; } }
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    flex-wrap: wrap; } }
 
 /*MEDIA QUERIS  600px */
 @media screen and (max-width: 600px) {
@@ -356,15 +435,45 @@ footer {
 
 .estilosSeccionImg__logo {
   display: flex;
-  justify-content: center; }
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap; }
 
 .estilosSeccionImg_peinados {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap: 20px; }
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; }
 
-.EstilosCarrousel__tituloMejoresEstilos h3 {
+.corte-1 {
+  width: 210px;
+  height: 210px;
+  background-size: cover;
+  background-image: url(../../public/img/corte1.jpg); }
+
+.corte-2 {
+  width: 210px;
+  height: 210px;
+  background-size: cover;
+  background-image: url(../../public/img/corte2.jpg); }
+
+.corte-3 {
+  width: 210px;
+  height: 210px;
+  background-size: cover;
+  background-image: url(../../public/img/corte3.jpg); }
+
+.corte-4 {
+  width: 210px;
+  height: 210px;
+  background-size: cover;
+  background-image: url(../../public/img/corte4.jpg); }
+
+.EstilosCarrousel__tituloMejoresEstilos h2 {
   background-color: #aa0000;
   border: black 5px solid;
   font-size: 30px;
@@ -401,15 +510,25 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; } }
+    align-items: center;
+    gap: 0;
+    flex-wrap: wrap; } }
 
 .ContactoTituloLogo__logoCentral {
   display: flex;
-  justify-content: center; }
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap; }
 
 .contactoFormulario {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
   margin-top: 80px;
   margin-bottom: 20px; }
   .contactoFormulario__formulario {
@@ -424,11 +543,14 @@ footer {
 /*MEDIA QUERIS 768px*/
 @media screen and (max-width: 768px) {
   .contactoFormulario__formulario {
-    font-size: 28px;
-    width: 338px;
     display: flex;
     flex-direction: column;
-    align-items: center; } }
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    flex-wrap: wrap;
+    font-size: 28px;
+    width: 338px; } }
 
 /*MEDIA QUERIS  600px */
 @media screen and (max-width: 600px) {

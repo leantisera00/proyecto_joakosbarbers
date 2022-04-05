@@ -1,20 +1,26 @@
 .estilosSeccionImg {
     &__logo {
-        display: flex;
-        justify-content: center;
+        @include flex (row, center, center);
     }
 
     &_peinados {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        gap: 20px;
+        @include flex (row, space-evenly, center, 20px);
     }
 
 }
 
+@for $i from 1 through 4 {
+    .corte-#{$i} {
+        width: 210px;
+        height: 210px;
+        background-size: cover;
+        background-image: url(../../public/img/corte#{$i}.jpg);
+}
+}
+
+
 .EstilosCarrousel {
-    &__tituloMejoresEstilos h3 {
+    &__tituloMejoresEstilos h2 {
         background-color: $color-principal;
         border: black 5px solid;
         font-size: 30px;
@@ -65,9 +71,6 @@
 /*MEDIA QUERIS 768px*/
 @media screen and (max-width: 768px) {
     .estilosSeccionImg {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex (column, center, center);
     }
 }

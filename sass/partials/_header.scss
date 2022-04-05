@@ -3,10 +3,13 @@ header {
     .navbar {
         background: $color-footer-header;
         border: solid black 5px;
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        justify-content: center;
+        @include flex (row, center, center, 20px);
+
+        &--active {
+            @extend .navitem;
+            background-color: #f1f100d3;
+            box-shadow: 0 0 10px #f1f100d3, 0 0 40px #f1f100d3, 0 0 80px #f1f100d3;
+            border-radius: 50px;}
 
     }
 
@@ -14,6 +17,7 @@ header {
         color: $color-principal;
         font-size: 35px;
     }
+
 
 }
 

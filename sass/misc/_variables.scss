@@ -1,3 +1,18 @@
 $color-principal:#aa0000;
 $color-fondo: linear-gradient(135deg, rgba(255, 0, 0, 1) 0%, rgba(255, 0, 4, 1) 10%, rgba(255, 255, 255, 1) 11%, rgba(255, 255, 255, 1) 20%, rgba(38, 0, 255, 1) 21%, rgba(38, 0, 255, 1) 30%, rgba(255, 255, 255, 1) 31%, rgba(255, 255, 255, 1) 40%, rgba(255, 0, 0, 1) 41%, rgba(255, 0, 0, 1) 50%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 1) 60%, rgba(0, 8, 255, 1) 61%, rgba(0, 8, 255, 1) 70%, rgba(255, 255, 255, 1) 71%, rgba(255, 255, 255, 1) 80%, rgba(255, 0, 0, 1) 81%, rgba(255, 0, 0, 1) 90%, rgba(255, 255, 255, 1) 91%, rgba(255, 255, 255, 1) 100%);
 $color-footer-header: linear-gradient(to top, #926229, #FAF3A0, #926229);
+$paddings: (
+    xlarge: 30px,
+    large: 25px,
+    medium: 20px,
+    xsmall: 15px
+);
+
+@each $var, $val in $paddings  {
+    .p-#{$var} {
+        padding: #{$val};
+    }
+
+
+    
+}

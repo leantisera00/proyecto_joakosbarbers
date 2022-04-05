@@ -2,15 +2,13 @@
     &__titulo {
         background-color: white;
         border: black solid 5px;
-        display: flex;
-        justify-content: center;
+        @include flex (row, center, center);
         font-size: 30px;
         margin-bottom: 20px;
     }
 
     &__logo {
-        display: flex;
-        justify-content: center;
+        @include flex (row, center, center);
     }
 }
 
