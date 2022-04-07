@@ -1,18 +1,18 @@
 .reservasTituloLogo {
     &__logo {
         @include flex (row, center, center);
-        margin-top: 20px;
+        margin-top: map-get($estilos, margensuperior);
     }
 }
 
 .reservasFormulario {
     @include flex (row, center, center);
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: map-get($estilos, margensuperior);
+    margin-bottom:  map-get($estilos, margeninferior);
 
     &__formulario {
         background: white;
-        border: solid black 5px;
+        border: map-get($estilos, borde );
         font-size: 30px;
         width: 814px;
     }
@@ -29,8 +29,8 @@
     }
 
     p {
-        background-color: white;
-        border: black solid 5px;
+        background-color: map-get($estilos, fondoblanco);
+        border: map-get($estilos, borde );
         font-size: 30px;
         @include flex (row, center, center);
     }

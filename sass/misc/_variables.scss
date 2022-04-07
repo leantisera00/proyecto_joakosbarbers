@@ -12,7 +12,11 @@ $paddings: (
     .p-#{$var} {
         padding: #{$val};
     }
-
-
-    
 }
+
+$estilos: (
+  margensuperior: 20px,
+  margeninferior: 20px,
+  borde: black solid 5px,
+  fondoblanco: white
+);

@@ -47,10 +47,10 @@ body {
 h1 {
     color: black;
     font-size: 30px;
-    background-color: white;
-    border: black solid 5px;
-    margin-top: 25px;
-    margin-bottom: 20px;
+    background-color: map-get($estilos, fondoblanco);
+    border: map-get($estilos, borde );
+    margin-top: map-get($estilos, margensuperior);
+    margin-bottom: map-get($estilos, margeninferior);
     display: flex;
     justify-content: center;
 }
@@ -59,9 +59,8 @@ h1 {
 h5 {
     font-size: 50px;
     color: $color-principal;
-    border: black;
-    background: white;
-    border: black solid 5px;
+    background-color: map-get($estilos, fondoblanco);
+    border: map-get($estilos, borde );
 }
 
 .row {

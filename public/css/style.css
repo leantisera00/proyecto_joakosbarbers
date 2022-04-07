@@ -55,7 +55,7 @@ h1 {
   font-size: 30px;
   background-color: white;
   border: black solid 5px;
-  margin-top: 25px;
+  margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
   justify-content: center; }
@@ -64,8 +64,7 @@ h1 {
 h5 {
   font-size: 50px;
   color: #aa0000;
-  border: black;
-  background: white;
+  background-color: white;
   border: black solid 5px; }
 
 .row {
@@ -92,12 +91,14 @@ header .navbar {
   align-items: center;
   gap: 20px;
   flex-wrap: wrap; }
-  header .navbar--active {
+  header .navbar--active, header .navbar--activeColor {
     background-color: #f1f100d3;
     box-shadow: 0 0 10px #f1f100d3, 0 0 40px #f1f100d3, 0 0 80px #f1f100d3;
     border-radius: 50px; }
+  header .navbar-nav {
+    text-align: center; }
 
-header .navLink, header .navbar--active {
+header .navLink {
   color: #aa0000;
   font-size: 35px; }
 
@@ -375,7 +376,7 @@ footer {
   margin-bottom: 20px; }
   .reservasFormulario__formulario {
     background: white;
-    border: solid black 5px;
+    border: black solid 5px;
     font-size: 30px;
     width: 814px; }
 
