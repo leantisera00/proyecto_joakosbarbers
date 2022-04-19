@@ -35,6 +35,7 @@ footer {
 
 }
 
+
 /*MEDIA QUERIS  600px */
 @media screen and (max-width: 600px) {
 
@@ -42,6 +43,26 @@ footer {
         h3 {
             font-size: 23px;
         }
+        .redes { 
+            padding: 0px;
+            
+            &__red {
+            height: 15px;
+        }
+    
+        &__instagram {
+            height: 25px;
+        }
+    
+        &__twitter {
+            height: 25px;
+        }
+    
+        &__facebook {
+            height: 25px;
+        }
+    
+    }
     }
 }
 

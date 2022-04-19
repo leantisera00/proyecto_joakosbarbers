@@ -180,7 +180,17 @@ footer {
 /*MEDIA QUERIS  600px */
 @media screen and (max-width: 600px) {
   footer h3 {
-    font-size: 23px; } }
+    font-size: 23px; }
+  footer .redes {
+    padding: 0px; }
+    footer .redes__red {
+      height: 15px; }
+    footer .redes__instagram {
+      height: 25px; }
+    footer .redes__twitter {
+      height: 25px; }
+    footer .redes__facebook {
+      height: 25px; } }
 
 /*MEDIA QUERIS 480px*/
 @media screen and (max-width: 480px) {
