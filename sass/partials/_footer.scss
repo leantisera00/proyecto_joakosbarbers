@@ -12,11 +12,23 @@ footer {
     .redes {
         padding: 10px;
         display: flex;
-        @include flex (row, center, center,20px, nowrap);
-        &__red {height: 40px;}
-        &__instagram {height: 50px;}
-        &__twitter {height: 50px;}
-        &__facebook{height: 50px;}
+        @include flex (row, center, center, 20px, nowrap);
+
+        &__red {
+            height: 40px;
+        }
+
+        &__instagram {
+            height: 50px;
+        }
+
+        &__twitter {
+            height: 50px;
+        }
+
+        &__facebook {
+            height: 50px;
+        }
 
     }
 

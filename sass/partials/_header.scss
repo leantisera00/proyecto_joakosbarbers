@@ -11,12 +11,19 @@ header {
             border-radius: 50px;
         }
 
-        &--activeColor{
-            @extend .navbar--active}
+        &--activeColor {
+            @extend .navbar--active
+        }
 
-    &-nav {text-align: center;}
+        &-nav {
+            text-align: center;
+        }
 
-       
+        &__logo {
+            padding: 5px;
+        }
+
+
     }
 
     .navLink {

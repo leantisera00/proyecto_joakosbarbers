@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="reservas, horarios, disponibilidad, horas, dias, semana, fecha, abierto, servicios, corte de pelo, corte de barba, perfilado de cejas, ubicacion, lugar, direccion, maps, barrio">
+    <meta name="keywords"
+        content="reservas, horarios, disponibilidad, horas, dias, semana, fecha, abierto, servicios, corte de pelo, corte de barba, perfilado de cejas, ubicacion, lugar, direccion, maps, barrio">
     <meta name="description" content="Reserva aquí tu dia y horario para venir a la Joako's Barber's">
     <link rel="shortcut icon" href="../../public/img/logo.png">
     <title>Reservas - Joako's Barber's</title>
@@ -20,7 +21,8 @@
     <!-- Inicio del header -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="../../index.html"> <img src="../img/logo.png" alt="logo"></a>
+            <a class="navbar-brand" href="../../index.html"> <img class="navbar__logo" src="../img/logo.png"
+                    alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -65,41 +67,44 @@
                 method="post">
 
                 <div class="reservasFormulario__nombreyapellido">
-                <label class="p-medium" for="nombreyapellido:">Nombre y Apellido:</label>
-                <input type="text" name="nombreyapellido" id="nombreyapellido"><br>
-            </div>
+                    <label class="p-medium" for="nombreyapellido:">Nombre y Apellido:</label>
+                    <input type="text" name="nombreyapellido" id="nombreyapellido"><br>
+                </div>
 
-            <div class="reservasFormulario__email" >
-                <label class="p-medium" for="email:">Email:</label>
-                <input type="email" name="email" id="email"><br>
-            </div>
+                <div class="reservasFormulario__email">
+                    <label class="p-medium" for="email:">Email:</label>
+                    <input type="email" name="email" id="email"><br>
+                </div>
 
-            <div class="reservasFormulario__celular">
-                <label class="p-medium" for="celular:"> Numero de celular:</label>
-                <input type="number" name="celular" id="celular"><br>
-               </div>
+                <div class="reservasFormulario__celular">
+                    <label class="p-medium" for="celular:"> Numero de celular:</label>
+                    <input type="number" name="celular" id="celular"><br>
+                </div>
 
                 <div class="reservasFormulario__servicios">
-                <label class="p-medium" for="Corte de pelo"> Servicios:</label>
-                <div class="reservasFormulario__cortedepelo">
-                <input type="radio" name="Seleccionunica" id="Corte de pelo" value="Corte de pelo"> Corte de Pelo
-            </div>
-            <div class="reservasFormulario__cortedepeloybarba">
-                <input type="radio" name="Seleccionunica" id="Corte de pelo + Barba" value="Corte de pelo + Barba">
-                Corte de Pelo + Barba
-            </div>
-            <div class="reservasFormulario__corteDePeloBarbaCejas">
-                <input type="radio" name="Seleccionunica" id="Corte de pelo + Barba + Cejas"> Corte de Pelo + Barba+
-                Cejas <br>
-            </div>
-        </div>
+                    <label class="p-medium" for="Corte de pelo"> Servicios:</label>
+                    <div class="reservasFormulario__cortedepelo">
+                        <input type="radio" name="Seleccionunica" id="Corte de pelo" value="Corte de pelo"> Corte de
+                        Pelo
+                    </div>
+                    <div class="reservasFormulario__cortedepeloybarba">
+                        <input type="radio" name="Seleccionunica" id="Corte de pelo + Barba"
+                            value="Corte de pelo + Barba">
+                        Corte de Pelo + Barba
+                    </div>
+                    <div class="reservasFormulario__corteDePeloBarbaCejas">
+                        <input type="radio" name="Seleccionunica" id="Corte de pelo + Barba + Cejas"> Corte de Pelo +
+                        Barba+
+                        Cejas <br>
+                    </div>
+                </div>
 
-        <div class="reservasFormulario__fechayhora">
-                <label class="p-medium" for="fechayhora"> Fecha y hora de tu reserva:</label>
-                <input type="datetime-local" name="fechayhora" id="">
-            </div>
+                <div class="reservasFormulario__fechayhora">
+                    <label class="p-medium" for="fechayhora"> Fecha y hora de tu reserva:</label>
+                    <input type="datetime-local" name="fechayhora" id="">
+                </div>
                 <div class="reservasFormulario__boton">
-                <button class="btn btn-danger btn-lg" type="submit">Enviar</button>
+                    <button class="btn btn-danger btn-lg" type="submit">Enviar</button>
             </form>
         </section>
 

@@ -8,57 +8,54 @@
 .reservasFormulario {
     @include flex (row, center, center);
     margin-top: map-get($estilos, margensuperior);
-    margin-bottom:  map-get($estilos, margeninferior);
+    margin-bottom: map-get($estilos, margeninferior);
 
     &__formulario {
         background: white;
-        border: map-get($estilos, borde );
+        border: map-get($estilos, borde);
         font-size: 30px;
         width: 814px;
     }
 
-    &__nombreyapellido {display: flex;
+    &__nombreyapellido {
+        display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    &__email {display: flex;
+    &__email {
+        display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    &__celular {display: flex;
+    &__celular {
+        display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    &__fechayhora {display: flex;
+    &__fechayhora {
+        display: flex;
         justify-content: center;
         align-items: center;
     }
-
-
-
-
-
 
 
     &__servicios {
         display: flex;
         flex-direction: column;
-        align-items: center;}
+        align-items: center;
+    }
 
     &__boton {
         display: flex;
         justify-content: center;
         margin-top: 15px;
-        margin-bottom: 15px;}
+        margin-bottom: 15px;
+    }
 
 }
-
-
-
-
 
 .reservasUbiPar {
 
@@ -68,7 +65,7 @@
 
     p {
         background-color: map-get($estilos, fondoblanco);
-        border: map-get($estilos, borde );
+        border: map-get($estilos, borde);
         font-size: 30px;
         @include flex (row, center, center);
     }
@@ -92,24 +89,30 @@
             width: 338px;
             @include flex (column, center, center);
         }
-        &__nombreyapellido {    display: flex;
+
+        &__nombreyapellido {
+            display: flex;
             flex-direction: column;
-}
-        
-    
-        &__email {display: flex;
+        }
+
+
+        &__email {
+            display: flex;
             flex-direction: column;
-}
-    
-        &__celular {display: flex;
+        }
+
+        &__celular {
+            display: flex;
             flex-direction: column;
-}
-        &__fechayhora{display: flex;
+        }
+
+        &__fechayhora {
+            display: flex;
             flex-direction: column;
-}
+        }
 
     }
-    
+
 }
 
 /*MEDIA QUERIS  600px */

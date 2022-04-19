@@ -22,7 +22,7 @@
 /*GLOBALS*/
 html {
   font-family: 'Bebas Neue', cursive;
-  background: linear-gradient(135deg, red 0%, #ff0004 10%, white 11%, white 20%, #2600ff 21%, #2600ff 30%, white 31%, white 40%, red 41%, red 50%, white 51%, white 60%, #0008ff 61%, #0008ff 70%, white 71%, white 80%, red 81%, red 90%, white 91%, white 100%);
+  background: linear-gradient(135deg, red 0%, #ff0004 10%, white 11%, white 20%, #00109B 21%, #00109B 30%, white 31%, white 40%, red 41%, red 50%, white 51%, white 60%, #00109B 61%, #00109B 70%, white 71%, white 80%, red 81%, red 90%, white 91%, white 100%);
   font-size: 62.5%; }
 
 li {
@@ -46,7 +46,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: 'Bebas Neue', cursive;
-  background: linear-gradient(135deg, red 0%, #ff0004 10%, white 11%, white 20%, #2600ff 21%, #2600ff 30%, white 31%, white 40%, red 41%, red 50%, white 51%, white 60%, #0008ff 61%, #0008ff 70%, white 71%, white 80%, red 81%, red 90%, white 91%, white 100%);
+  background: linear-gradient(135deg, red 0%, #ff0004 10%, white 11%, white 20%, #00109B 21%, #00109B 30%, white 31%, white 40%, red 41%, red 50%, white 51%, white 60%, #00109B 61%, #00109B 70%, white 71%, white 80%, red 81%, red 90%, white 91%, white 100%);
   font-size: 62.5%;
   line-height: normal;
   color: black; }
@@ -84,7 +84,8 @@ select {
 textarea {
   border: black solid 5px; }
 
-.btn-group-lg > .btn, .btn-lg {
+.btn-group-lg > .btn,
+.btn-lg {
   color: white;
   font-size: 25px;
   border: 5px solid black; }
@@ -119,6 +120,8 @@ header .navbar {
     border-radius: 50px; }
   header .navbar-nav {
     text-align: center; }
+  header .navbar__logo {
+    padding: 5px; }
 
 header .navLink {
   color: #aa0000;
