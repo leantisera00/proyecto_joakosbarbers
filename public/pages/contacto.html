@@ -61,22 +61,34 @@
 		</section>
 		<section class="contactoFormulario animate__animated animate__backInLeft row">
 			<form class="col-12 contactoFormulario__formulario" action="" method="post">
+				<div class="contactoFormulario__nombreyapellido">
 				<label class="p-medium" for="nombreyapellido:">Nombre y Apellido:</label>
 				<input type="text" name="nombreyapellido" id="nombreyapellido"><br>
+			</div>
+				<div class="contactoFormulario__email">
 				<label class="p-medium" for="email:">Email:</label>
 				<input type="email" name="email" id="email"><br>
+			</div>
+				<div class="contactoFormulario__celular">
 				<label class="p-medium" for="celular:"> Numero de celular:</label>
 				<input type="number" name="celular" id="celular"><br>
+			</div>
+				<div class="contactoFormulario__motivo">
 				<label class="p-medium" for="motivo"> Motivo:</label>
 				<select name="motivo" id="motivo">
-					<option value="Queja">Queja</option>
-					<option value="Sugerencia">Sugerencia</option>
 					<option value="Consulta">Consulta</option>
+					<option value="Sugerencia">Sugerencia</option>
+					<option value="Queja">Queja</option>
 				</select>
+			</div>
 				<br>
-				<label class="p-medium" for="comentario">Comentario:</label><br>
+				<div class="contactoFormulario__comentario">
+				<label class="p-medium" for="comentario">Comentario:</label>
 				<textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
-				<button class="btn btn-danger btn-lg" type="submit"> Enviar Data</button>
+			</div>
+			<div class="contactoFormulario__boton">
+				<button class="btn btn-danger btn-lg" type="submit"> Enviar</button>
+			</div>
 			</form>
 		</section>
 	</main>

@@ -48,7 +48,8 @@ body {
   font-family: 'Bebas Neue', cursive;
   background: linear-gradient(135deg, red 0%, #ff0004 10%, white 11%, white 20%, #2600ff 21%, #2600ff 30%, white 31%, white 40%, red 41%, red 50%, white 51%, white 60%, #0008ff 61%, #0008ff 70%, white 71%, white 80%, red 81%, red 90%, white 91%, white 100%);
   font-size: 62.5%;
-  line-height: normal; }
+  line-height: normal;
+  color: black; }
 
 h1 {
   color: black;
@@ -73,6 +74,27 @@ h5 {
 
 main {
   min-height: 100vh; }
+
+input {
+  border: black solid 5px; }
+
+select {
+  border: black solid 5px; }
+
+textarea {
+  border: black solid 5px; }
+
+.btn-group-lg > .btn, .btn-lg {
+  color: white;
+  font-size: 25px;
+  border: 5px solid black; }
+
+.btn-danger {
+  background-color: #aa0000; }
+
+.btn:hover {
+  background-color: #aa0000;
+  box-shadow: 0 0 10px #f1f100d3, 0 0 40px #f1f100d3, 0 0 80px #f1f100d3; }
 
 @keyframes twister {
   from {
@@ -135,6 +157,7 @@ footer {
     gap: 0;
     flex-wrap: wrap; }
   footer .redes {
+    padding: 10px;
     display: flex;
     display: flex;
     flex-direction: row;
@@ -142,6 +165,14 @@ footer {
     align-items: center;
     gap: 20px;
     flex-wrap: nowrap; }
+    footer .redes__red {
+      height: 40px; }
+    footer .redes__instagram {
+      height: 50px; }
+    footer .redes__twitter {
+      height: 50px; }
+    footer .redes__facebook {
+      height: 50px; }
 
 /*MEDIA QUERIS  600px */
 @media screen and (max-width: 600px) {
@@ -202,7 +233,7 @@ footer {
 /*MEDIA QUERIS 320px*/
 @media screen and (max-width: 320px) {
   .sectionUno__logoCentral {
-    height: 200px; }
+    height: 150px; }
   .sectionDos__seccionesImg {
     height: 140px; } }
 
@@ -379,6 +410,31 @@ footer {
     border: black solid 5px;
     font-size: 30px;
     width: 814px; }
+  .reservasFormulario__nombreyapellido {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .reservasFormulario__email {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .reservasFormulario__celular {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .reservasFormulario__fechayhora {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .reservasFormulario__servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .reservasFormulario__boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px; }
 
 .reservasUbiPar__logoUbicacion {
   display: flex;
@@ -415,7 +471,19 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 0;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  .reservasFormulario__nombreyapellido {
+    display: flex;
+    flex-direction: column; }
+  .reservasFormulario__email {
+    display: flex;
+    flex-direction: column; }
+  .reservasFormulario__celular {
+    display: flex;
+    flex-direction: column; }
+  .reservasFormulario__fechayhora {
+    display: flex;
+    flex-direction: column; } }
 
 /*MEDIA QUERIS  600px */
 @media screen and (max-width: 600px) {
@@ -537,9 +605,34 @@ footer {
     border: solid black 5px;
     font-size: 30px;
     width: 814px; }
-  .contactoFormulario textarea {
-    height: 100px;
-    width: 225px; }
+  .contactoFormulario__nombreyapellido {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .contactoFormulario__email {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .contactoFormulario__celular {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .contactoFormulario__motivo {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .contactoFormulario__comentario {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .contactoFormulario__comentario textarea {
+      height: 100px;
+      width: 225px; }
+  .contactoFormulario__boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px; }
 
 /*MEDIA QUERIS 768px*/
 @media screen and (max-width: 768px) {
@@ -551,7 +644,25 @@ footer {
     gap: 0;
     flex-wrap: wrap;
     font-size: 28px;
-    width: 338px; } }
+    width: 338px; }
+  .contactoFormulario__nombreyapellido {
+    display: flex;
+    flex-direction: column; }
+  .contactoFormulario__email {
+    display: flex;
+    flex-direction: column; }
+  .contactoFormulario__celular {
+    display: flex;
+    flex-direction: column; }
+  .contactoFormulario__motivo {
+    display: flex;
+    flex-direction: column; }
+  .contactoFormulario__comentario {
+    display: flex;
+    flex-direction: column; }
+  .contactoFormulario__boton {
+    display: flex;
+    flex-direction: column; } }
 
 /*MEDIA QUERIS  600px */
 @media screen and (max-width: 600px) {

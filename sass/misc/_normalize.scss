@@ -42,6 +42,7 @@ body {
     background: $color-fondo;
     font-size: 62.5%;
     line-height: normal;
+    color: black;
 }
 
 h1 {
@@ -70,4 +71,24 @@ h5 {
 
 main {
     min-height: 100vh;
+}
+
+input {border: map-get($estilos, borde );}
+
+select {border: map-get($estilos, borde );}
+
+textarea {border: map-get($estilos, borde );}
+
+.btn-group-lg>.btn, .btn-lg {
+    color: white;
+    font-size: 25px;
+    border: 5px solid black;
+}
+
+.btn-danger {
+    background-color: $color-principal;}
+
+.btn:hover{
+background-color: $color-principal;
+box-shadow: 0 0 10px #f1f100d3, 0 0 40px #f1f100d3, 0 0 80px #f1f100d3;
 }

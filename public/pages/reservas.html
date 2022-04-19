@@ -63,22 +63,43 @@
         <section class="reservasFormulario row">
             <form class="col-12 reservasFormulario__formulario animate__animated animate__backInLeft" action=""
                 method="post">
+
+                <div class="reservasFormulario__nombreyapellido">
                 <label class="p-medium" for="nombreyapellido:">Nombre y Apellido:</label>
                 <input type="text" name="nombreyapellido" id="nombreyapellido"><br>
+            </div>
+
+            <div class="reservasFormulario__email" >
                 <label class="p-medium" for="email:">Email:</label>
                 <input type="email" name="email" id="email"><br>
+            </div>
+
+            <div class="reservasFormulario__celular">
                 <label class="p-medium" for="celular:"> Numero de celular:</label>
                 <input type="number" name="celular" id="celular"><br>
+               </div>
+
+                <div class="reservasFormulario__servicios">
                 <label class="p-medium" for="Corte de pelo"> Servicios:</label>
+                <div class="reservasFormulario__cortedepelo">
                 <input type="radio" name="Seleccionunica" id="Corte de pelo" value="Corte de pelo"> Corte de Pelo
+            </div>
+            <div class="reservasFormulario__cortedepeloybarba">
                 <input type="radio" name="Seleccionunica" id="Corte de pelo + Barba" value="Corte de pelo + Barba">
                 Corte de Pelo + Barba
+            </div>
+            <div class="reservasFormulario__corteDePeloBarbaCejas">
                 <input type="radio" name="Seleccionunica" id="Corte de pelo + Barba + Cejas"> Corte de Pelo + Barba+
                 Cejas <br>
+            </div>
+        </div>
+
+        <div class="reservasFormulario__fechayhora">
                 <label class="p-medium" for="fechayhora"> Fecha y hora de tu reserva:</label>
                 <input type="datetime-local" name="fechayhora" id="">
-
-                <button class="btn btn-danger " type="submit">Enviar</button>
+            </div>
+                <div class="reservasFormulario__boton">
+                <button class="btn btn-danger btn-lg" type="submit">Enviar</button>
             </form>
         </section>
 
